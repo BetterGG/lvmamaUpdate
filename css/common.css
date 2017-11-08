@@ -1,0 +1,31 @@
+body,ol,ul,h1,h3,h2,h4,h5,h6,dd,dl,pre,p{
+   margin:0;
+   padding:0;
+   list-style:none;
+}
+*{
+   box-sizing:border-box;
+}
+body{
+   font:12px "simhei",Arial,Helvetica,sans-serif;
+   color:#666;
+   background-color:#f5f5f5;
+}
+img{
+  vertical-align:bottom;
+}
+input,button{
+    outline: none;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.lt{ float: left; }
+.rt{ float: right; }

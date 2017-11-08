@@ -1,0 +1,690 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>起航旅游-酒店</title>
+  <link rel="stylesheet" href="css/common.css" />	
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <style type="text/css">
+   
+   /* 总框架*/
+    #all{
+     width:1330px;
+     margin:0 auto;
+/*	 border:1px solid red;*/
+	 background:#F7F7F7;
+	}
+	#all > div:not(:first-child){
+	  width:90%;
+	  margin:0 auto;
+	}
+	/* 第一楼轮播图*/
+	#myCarousel{
+	 position:relative;
+	 margin:0 auto;
+	 width:1330px;
+	 height:250px;
+	 overflow: hidden;
+	}
+	#myCarousel img{
+	 width:1330px;
+	 height:250px;
+	}
+	#myCarousel .carousel-indicators{
+	  position:absolute;
+	  right:20px;
+	  bottom:10px;
+	
+	}
+	.carousel-indicators > li{
+	  width:13px;
+	  height:13px;
+	}
+	/* 第二楼热门度假区*/
+	#all>#floor2{
+	  clear:both;
+	  margin-top:50px;
+/*	  border:1px solid pink;*/
+      background:#F7F7F7;
+
+	}
+	#all  h2:first-child{
+	 text-align:center;
+	 height:40px;
+	 width:100%;
+	 margin-bottom:30px;
+/*	 border:1px solid black;*/
+	}
+	#all>#floor2>#f2_left{
+	  position:relative;
+	  width:25%;
+/*	  border:1px solid blue;*/
+	  float:left;
+	  height:273px;
+      background-image:url("img/diqu1.jpg");
+	  background-size:100% 100%;
+	}
+	#check{
+	 position:absolute;
+	 right:165px;
+
+	}
+	#all>#floor2>#f2_left ol > li.showactive{
+	  background:orange;
+	  color:white;
+	}
+    #all>#floor2>#f2_left ol{
+	   width:120px;
+       position:absolute;
+	   right:10px;
+	   top:10px;
+	}
+    #all>#floor2>#f2_left ol > li{
+	  text-align:center;
+	  line-height:30px;
+	  border-radius:10%;
+	  width:120px;
+	  height:30px;
+	  margin-bottom:5px;
+	  background:rgba(255,255,255,0.76);
+
+	}
+	#all>#floor2>#f2_left ol > li a{
+	 color:#928E8C;
+	}	
+    #all>#floor2>#f2_right{
+	  width:872px;
+	  background:#fff;
+	  float:right;
+/*	  border:1px solid red;*/
+	  padding:10px;
+	 
+	}
+    #all div.fenbu{
+	  width:265px;
+	  float:left;
+	  margin:10px 18px 0 0;
+	  height:165px;
+	  position:relative;
+	  transition: transform .3s linear;
+	  cursor: pointer;
+	}
+/*	所有图片的格式都为这个*/
+	#all div.fenbu>img{
+	   width:265px;
+	   height:140px;
+	}
+	#all div.fenbu p{
+	  font-size:16px;
+	}
+	#all div.fenbu p .jiage{
+	   color:#FF6A08;
+	   position:absolute;
+	   right:20px;
+	   font-size:20px;
+	 }
+	 #all div.fenbu p span:last-child{
+	  position:absolute;
+	  right:0px;
+	  bottom:0;
+	 }
+	/* 第三楼特价酒店*/
+	#all>#floor3{
+	  clear:both;
+	  height:600px;
+/*	  border:1px solid red;*/
+	  padding-top:30px;
+	  position:relative;
+	}
+	#all>#floor3 #f3_mid{
+	  position:absolute;
+	  left:380px;
+	  width:500px;
+/*	  border:1px solid red;*/
+
+	}
+	#all>#floor3 #f3_mid li{
+	  display:inline-block;
+	  float:left;
+	  font-size:20px;
+	  width:40px;
+	  height:20px;
+	  line-height:20px;
+	  margin-right:10px;
+	}  
+	#all>#floor3 #f3_mid li:hover{
+	 cursor:pointer;
+	}
+	#all #floor3 #f3_footer{
+/*	  border:1px solid red;*/ 
+
+	  margin-top:80px;
+	  height:400px;
+	  width:100%;
+	  display:flex;
+	  flex-wrap:wrap;
+	  justify-content:space-between;
+
+	}
+	.f3_mid_active{
+	   color:orange;
+	}
+
+	/* 第四楼主题推荐*/
+    .f4_active{
+	 color:orange;
+	}
+	#all #floor4>#f4_top > div{
+	 height:100px;
+	 margin:0 50px 50px 0;
+/*	 border:1px solid yellow;*/
+     display:inline-block;
+	 position:relative;
+	}
+	#all #floor4>#f4_top > div:first-child{
+	  margin-left:100px;
+	}
+	#all #floor4>#f4_top > div > span{
+	 font-size:18px;
+	 position:absolute;
+	 left:65px;
+	 top:95px;
+	}
+
+	#all #floor4>#f4_top > div > img{
+	  display:inline-block;
+	  margin-left:58px;
+	  cursor:pointer;
+	}
+	#all #floor4>#f4_footer{ 
+          /*	border:1px solid red;*/
+	  margin-top:10px;
+	  height:400px;
+	  width:100%;
+	  display:flex;
+	  flex-wrap:wrap;
+	  justify-content:space-between;
+	  }
+	/* 第五楼合作品牌*/
+	#f5_all{
+		margin: 0 0 40px 80px;
+	}
+/*    动画*/
+   .fenbu:hover{
+    transform:translateY(-10px);
+    -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+   }
+  </style>
+ </head>
+ <body>
+ 	<div id="header"></div>
+ 	<div id="search">
+        <img src="img/logo.png" alt="">
+        <div class="search_box">
+            <div class="lt">
+                <span>杭州</span>
+                <span class="rt">出发</span>
+            </div>
+            <input type="text" placeholder="请输入、目的地、主题或关键词">
+            <img src="img/search.png" class="search" alt="">
+            <ul class="search_result"></ul>
+        </div>
+        <div class="search_promise rt">
+            <div>
+                <div class="search_img1"></div>
+                <p>价格保证</p>
+            </div>
+            <div>
+                <div class="search_img2"></div>
+                <p>退订保障</p>
+            </div>
+            <div>
+                <div class="search_img3"></div>
+                <p>救援保障</p>
+            </div>
+            <div>
+                <div class="search_img4"></div>
+                <p>24时服务</p>
+            </div>
+        </div>
+    </div>
+ 	<div id="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="outland.html">出境游</a></li>
+            <li><a href="inland.html">国内游</a></li>
+            <li class="active"><a href="hotel.html">酒店</a></li>
+        </ul>
+    </div>
+    <div id="all">
+	     <div id="myCarousel" class="carousel slide" data-ride="carousel"  data-interval=2000>
+		 <ol class="carousel-indicators">
+           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+           <li data-target="#myCarousel" data-slide-to="1"></li>
+           <li data-target="#myCarousel" data-slide-to="2" ></li>
+           <li data-target="#myCarousel" data-slide-to="3" ></li>
+           <li data-target="#myCarousel" data-slide-to="4" ></li>
+           <li data-target="#myCarousel" data-slide-to="5" ></li>
+		 </ol>
+		 <div class="carousel-inner">
+ 		   <!--图片从数据库中获取 -->
+		  </div>
+		</div>
+	    <div id="floor2">
+		  <h2>热门度假区</h2>
+		  <div id="f2_left">
+		   <ol class="area">
+		     <li class="showactive"><a href="">迪士尼度假区</a></li>
+		     <li><a href="">安吉度假区</a></li>
+		     <li><a href="">三亚度假区</a></li>
+		     <li><a href="">灵山度假区</a></li>
+		     <li><a href="">天目湖度假区</a></li>
+		     <li><a href="">三清山度假区</a></li>
+		   </ol>
+		  </div>
+		  <div id="f2_right">
+			<h3>迪士尼度假区</h3>
+			<p>
+			  <span>这 些 都 是 旅 游 者 不 容 错 过 的 旅 游 胜 地 <span id="check">查看更多      </span></span>
+			</p>
+			 <div id="fenbuAll">
+				  <div class="fenbu" data-href="hotel-details.html?pid=30">
+				  	 <img src="img/hotel/1.jpg" alt="" />
+				     <p> 
+						 <span class="title">上海龙之梦大酒店</span>
+						 <span class="jiage">￥1630</span>
+						 <span>起</span>
+					 </p>
+				  </div>
+				  <div class="fenbu" data-href="hotel-details.html?pid=31">
+				  	 <img src="img/hotel/2.jpg" alt="" />
+				  
+				     <p> 
+						 <span class="areatitle">桔子水晶酒店（上海国际...</span>
+						 <span class="jiage">￥888</span>
+						 <span>起</span>
+					 </p>
+				  </div>
+				  <div class="fenbu" data-href="hotel-details.html?pid=32">
+				     <img src="img/hotel/3.jpg" alt="" />
+				     <p> 
+						 <span class="areatitle">杭州良渚君澜度假酒店</span>
+						 <span class="jiage">￥1525</span>
+						 <span>起</span>
+					 </p>
+				  </div>
+               </div>
+		  </div>
+		</div>
+	    <div id="floor3" class="clear">
+		  <h2>特价酒店</h2>
+		  <ul id="f3_mid">
+		    <li class="f3_mid_active">上海</li>
+		    <li>常州</li>
+		    <li>杭州</li>
+		    <li>苏州</li>
+		    <li>宁波</li>
+		    <li>黄山</li>
+		    <li>南京</li>
+		    <li>海南</li>
+		  </ul>
+		  <div id="f3_footer">
+		  </div>
+       </div>
+	    <div id="floor4">
+			<h2>主题推荐</h2>	
+		   <div id="f4_top">
+				  <div>
+				  <img src="img/111.png" alt="" class="f4_active"/><br>
+				   <span>驴悦亲子</span>
+				  </div>
+				  <div>
+				   <img src="img/222.png" alt="" /><br>
+                    <span>城市精品</span>
+				  </div>
+				  <div>
+				   <img src="img/333.png" alt="" /><br>
+				   <span>市郊娱乐</span>
+				  </div>
+				  <div>
+				    <img src="img/444.png" alt="" /><br>
+				    <span>名山盛景</span>
+				  </div>
+				  <div>
+				    <img src="img/555.png" alt="" /><br>
+				    <span>酒店控</span>
+				  </div>
+				  
+		   </div>
+		   <div id="f4_footer">
+		     
+		   </div>
+		</div>
+	    <div id="floor5">
+		   <h2>合作品牌</h2>
+		   <div id="f5_all">
+		     <img src="img/c1.jpg" alt="" />	
+		     <img src="img/c2.jpg" alt="" />	
+		     <img src="img/c3.jpg" alt="" />	
+		     <img src="img/c4.jpg" alt="" />	
+		     <img src="img/c5.jpg" alt="" />	
+		     <img src="img/c6.jpg" alt="" />	
+		     <img src="img/c7.jpg" alt="" />	
+		     <img src="img/c8.jpg" alt="" />	
+		   </div>
+		</div>
+	</div>
+	<div id="footer">
+        <ul class="promise">
+            <li>
+                <div class="bg_logo1 lt"></div>
+                <div class="lt">
+                    <p class="promise_title">价格保证</p>
+                    <p class="promise_info">同类产品，保证低价</p>
+                </div>
+            </li>
+            <li>
+                <div class="bg_logo2 lt"></div>
+                <div class="lt">
+                    <p class="promise_title">退订保障</p>
+                    <p class="promise_info">因特殊情况影响出行，保证退订</p>
+                </div>
+            </li>
+            <li>
+                <div class="bg_logo3 lt"></div>
+                <div class="lt">
+                    <p class="promise_title">救援保障</p>
+                    <p class="promise_info">旅途中遇意外情况，保证援助</p>
+                </div>
+            </li>
+            <li>
+                <div class="bg_logo4 lt"></div>
+                <div class="lt">
+                    <p class="promise_title">7x24小时服务</p>
+                    <p class="promise_info">快速响应，全年无休</p>
+                </div>
+            </li>
+        </ul>
+        <div class="about">
+            <ul class="clear lt">
+                <li>
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a>起航简介</a></dd>
+                        <dd><a>旅游度假资历</a></dd>
+                        <dd><a>网站地图</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>联系我们</dt>
+                        <dd><a>门店信息</a></dd>
+                        <dd><a>意见反馈</a></dd>
+                        <dd><a>微博</a></dd>
+                        <span>24小时服务电话</span>
+                        <span class="tel">1010-6666</span>
+                        <span>免长途费，全年无休</span>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>订购指南</dt>
+                        <dd><a>门票使用</a></dd>
+                        <dd><a>常见问题</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd><a>起航账户支付</a></dd>
+                        <dd><a>起航礼品卡支付</a></dd>
+                        <dd><a>电话预授权支付</a></dd>
+                        <dd><a>分期付款</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>特色服务</dt>
+                        <dd><a>团购预约</a></dd>
+                        <dd><a>分销系统</a></dd>
+                        <dd><a>起航联盟</a></dd>
+                        <dd><a>开放平台</a></dd>
+                        <dd><a>供应商加盟合作</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>售后服务</dt>
+                        <dd><a>退换货说明</a></dd>
+                        <dd><a>投诉建议</a></dd>
+                        <span class="check_tel">举报电话:</span>
+                        <span>201-123456</span>
+                        <span>举报邮箱:</span>
+                        <span>tom@qq.com</span>
+                    </dl>
+                </li>
+            </ul>
+            <div class="code lt">
+                <p class="code_title">订阅特价、促销信息</p>
+                <input type="text" placeholder="输入Email(如：a@bc.c)">
+                <button>订阅</button>
+                <div class="two_code">
+                    <img src="img/2d_code-1.png" alt="">
+                    <span>扫描下载起航客户端手机预定，优惠多多</span>
+                </div>
+                <p>杭州旅游投诉电话：021-6439132</p>
+            </div>
+        </div>
+        <div class="legal">
+            <p>浙江杭州起航国际有限公司。旅行业务经营许可证编号：L—ZJ—CJ00536</p>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/header.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+	<script type="text/javascript">
+	 var maxTitle=function(arr,max){
+	   for(var j=0;j<arr.length;j++){
+			  for(var i=0;i<arr[j].length;i++){
+			   p=arr[j][i]["hotel_title"];
+			   var a=p.length;
+			   if(a>=max){
+				 p=p.substring(0,max);
+				 arr[j][i]["hotel_title"]=p+"...";
+			   }
+			  }
+			}
+      }
+//	  设置第四层的图标样式
+	  $start=$("#f4_top > div").children(".f4_active");
+	  startSrc=$start.attr("src");
+	  $start.attr("src",startSrc.split(".").join("h."))
+		  .attr("class","f4_active blur");
+	  
+//     第二层的字体样式
+	  $("#f2_left > ol > li").mouseout(function(){
+	   $e=$(this).children("a").css("color","#928E8C");
+	  })
+//	  轮播图数据导入
+	  $.ajax({
+	   type:"GET",
+	   url:"data/carousel.php",
+	   success:function(data){
+		 var html="";
+         for(let i=0;i<data.length;i++){
+          html+=`
+		   <div class="item">
+		   <img src="${data[i].hotel_img}" alt="" />
+		  </div>
+		  `;
+		 }
+		  $(".carousel-inner").html(html);
+         $(".carousel-inner").children().first().attr("class","item active");
+	   },
+	   error:function(){
+	     alert("您的网络出现故障，请检查网络");
+	   }
+	  })
+//	  第二层数据导入
+	  $.ajax({
+		type:"GET",
+	    url:"data/areaimg.php",
+		success:function(data){
+			var p=[];
+			var areaArr=[];
+			for(var i=0;i<data.length/3;i++){
+			  areaArr[i]=[data[i*3],data[i*3+1],data[i*3+2]];
+			}
+//			 console.log(areaArr);
+			var areaArr1=areaArr.slice();
+//			console.log(areaArr1);
+       maxTitle(areaArr,11);
+		 
+//		 右边数据导入
+		 $.ajax({
+		   type:"Get",
+		   url:"data/area.php",
+		   success:function(data){
+			$(".area").on("mouseover","li:not(.showactive)",function(){
+//				鼠标划入划出变化js
+				$(this).attr("class","showactive");
+				$(this).siblings().attr("class","");
+	//			左边图片的导入
+				var index=$(this).index();
+				var showImg='url("'+data[index].hotel_img+'")';
+	//字体的变化
+				$("#f2_left").css("backgroundImage",showImg);
+				$(".showactive").children("a").css("color","white");
+	//			右边标题的导入
+				var areaTitle=$(".showactive > a").text();
+				$("#f2_right > h3").text(areaTitle);
+	//			获得正在焦点的index
+			    var areaIndex=$(".area > li.showactive").index();
+				var areaAll=areaArr[areaIndex];
+				var $area=$("#f2_right > div").children(".fenbu");
+				var url = "hotel-details.html?pid=";
+
+				console.log( $area.first(), $area.last())
+				$area.first().attr( "data-href",url+areaAll[0]['product_id'] )
+				 	.children("img").attr("src",areaAll[0]["hotel_img"]).next().children().first().text(areaAll[0]["hotel_title"]).next().text("￥"+areaAll[0]["hotel_price"]);
+				$area.last().attr( "data-href",url+areaAll[2]['product_id'] )
+				 	.children("img").attr("src",areaAll[2]["hotel_img"]).next().children().first().text(areaAll[2]["hotel_title"]).next().text("￥"+areaAll[2]["hotel_price"]);
+				$area.eq(1).attr( "data-href",url+areaAll[1]['product_id'] )
+				 	.children("img").attr("src",areaAll[1]["hotel_img"]).next().children().first().text(areaAll[1]["hotel_title"]).next().text("￥"+areaAll[1]["hotel_price"]);
+
+			});
+			// $("#f2_left area li:first-child").trigger("mouseover")
+		   },
+		   error:function(){
+			   alert("您的网络异常，请检查");
+		   }
+		  })
+		},
+		error:function(){
+			   alert("您的网络异常，请检查");
+		}
+	  })
+//	  第三层
+	  $.ajax({
+	   type:"GET",
+	   url:"data/tjjd.php",
+	   success:function(data){
+		 var ztIndex=0;
+		 var ztArr=[];
+		 var ztChange=function(){
+		  var html="";
+		  for(var i=0;i<data.length/8;i++){
+			   html+=`<div class="fenbu" data-href="hotel-details.html?pid=${parseInt(ztArr[ztIndex][i]['product_id'])}">
+					 <img src=${ztArr[ztIndex][i].hotel_img} alt="" />
+					<p>${ztArr[ztIndex][i].hotel_title}<span class="jiage">￥${ztArr[ztIndex][i].hotel_price}</span><span>起</span>
+				  </div>`;
+		 }
+		          $("#f3_footer").html(html); 
+		}
+//	     console.log(data);
+		 for(var i=0;i<data.length/8;i++){
+			 ztArr[i]=[];
+		   for(var j=0;j<8;j++){
+		    ztArr[i][j]=data[i*8+j];
+		   }
+		 }
+		 maxTitle(ztArr,11);
+//		 console.log(ztArr);
+		 ztChange();
+		  $("#f3_mid > li").click(function(){
+		   $(this).attr("class","f3_mid_active");
+		   $(this).siblings().attr("class","");
+		   ztIndex=$(".f3_mid_active").index();
+//		   console.log(ztIndex);
+		   ztChange();
+		  })
+	   },
+	   error:function(){
+	    alert("您的网络异常，请检查");
+	   }
+	  })
+//	  第四层
+	  $.ajax({
+	   type:"GET",
+	   url:"data/zttj.php",
+	   success:function(data){
+	      var  tjArr=[];
+		  var tjIndex=0;
+		  var html="";
+		  for(var i=0;i<data.length/8;i++){
+			 tjArr[i]=[];
+		   for(var j=0;j<8;j++){
+		    tjArr[i][j]=data[i*8+j];
+		   }
+		 }
+		 maxTitle(tjArr,10);
+		 tjChange=function(){
+			 for(var i=0;i<8;i++){
+			  html+=`<div class="fenbu" data-href="hotel-details.html?pid=${parseInt(tjArr[tjIndex][i]['product_id'])}">
+					 <img src=${tjArr[tjIndex][i].hotel_img} alt="" />
+					<p>${tjArr[tjIndex][i].hotel_title}<span class="jiage">￥${tjArr[tjIndex][i].hotel_price}</span><span>起</span>
+				  </div>`;
+			 }
+					 $("#f4_footer").html(html);
+					 html="";
+		 }
+		  tjChange();
+          $fontColor=$(".f4_active").next().next();
+          $fontColor.css("color","orange");
+		  console.log($(".f4_active").next());
+		 $("#f4_top > div > img").click(function(){
+			if(!$(this).attr("class")){ 
+			 $("#f4_top > div").children("span").css("color","#333");
+             $("#f4_footer").html("");
+				$e=$(this);
+				var imgSrc=$(this).attr("src");
+				$e.attr("src",imgSrc.split(".").join("h."))
+				  .attr("class","blur");
+				var otherSrc=$e.parent().siblings().children(".blur").attr("src");
+				$e.parent().siblings().children(".blur").attr("src",otherSrc.split("h.").join(".")).attr("class","");
+
+			 tjIndex=$("#f4_top > div").children(".blur").parent(). index();
+			 $("#f4_top > div").children(".blur").next().next().  css("color","orange");
+			 console.log(tjIndex);
+               tjChange();
+            }
+		  });
+//		 console.log(html);
+
+
+	 },
+	   error:function(){
+	    alert("您的网络异常，请检查");;
+	   }
+	  })
+	  $("[id*='floor']").on("click",".fenbu",function(){
+	  	location.href = $(this).attr("data-href");
+	  })
+	</script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+ </body>
+</html>

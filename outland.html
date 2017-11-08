@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>出境游</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/outland.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+	<header id="header"></header>
+	<div id="search">
+		<img src="img/logo.png" alt="">
+		<div class="search_box">
+			<div class="lt">
+				<span>杭州</span>
+				<span class="rt">出发</span>
+			</div>
+			<input type="text" placeholder="请输入、目的地、主题或关键词">
+			<img src="img/search.png" class="search" alt="">
+			<ul class="search_result"></ul>
+		</div>
+		<div class="search_promise rt">
+			<div>
+				<div class="search_img1"></div>
+				<p>价格保证</p>
+			</div>
+			<div>
+				<div class="search_img2"></div>
+				<p>退订保障</p>
+			</div>
+			<div>
+				<div class="search_img3"></div>
+				<p>救援保障</p>
+			</div>
+			<div>
+				<div class="search_img4"></div>
+				<p>24时服务</p>
+			</div>
+		</div>
+	</div>
+	<div id="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li class="active"><a href="outland.html">出境游</a></li>
+            <li><a href="inland.html">国内游</a></li>
+            <li><a href="hotel.html">酒店</a></li>
+        </ul>
+    </div>
+	<div class="main">
+		<!-- 	1、页面头部	 -->
+		
+
+		<!-- 	2、banner	 -->
+		<div id="banner-all">
+			<!-- 	2.1、banner-左边 -->
+			<div id="banner-left">
+				<!-- 	2.1.1、banner-左上	 -->
+				<div id="banner-logo">
+					<img src="img/banner-logo.png" alt="banner-logo">
+				</div>
+				<!-- 	2.1.2、banner-左下	 -->
+				<div id="banner-tabs">
+						<div class="dtdd">
+							<dl>
+								<dt><h2>海岛&东南亚</h2></dt>
+								<dd><a>巴厘岛</a> <a>越南</a> <a>泰国</a> <a>普吉岛</a></dd>
+							</dl>
+						</div>
+						<div class="tabs-detail">
+							<dl class="clear">
+								<dt>热门旅游地</dt>
+								<dd><a href="">曼谷</a> <a href="">清迈</a> <a href="">普吉</a> <a href="">新加坡</a> <a href="">苏梅岛</a> <a href="">马来西亚</a> <a href="">斯里兰卡</a> <a href="">柬埔寨</a> <a href="">尼泊尔</a> <a href="">越南</a> <a href="">美奈</a> <a href="">印度</a> <a href="">岘港</a> <a href="">芽庄</a></dd>
+							</dl>
+							<dl class="clear">
+								<dt>热门玩法</dt>
+								<dd><a href="">曼谷+芭提雅</a> <a href="">新加坡+马来西亚</a> <a href="">新加坡民丹岛</a> <a href="">斯里兰卡一地</a> <a href="">尼泊尔一地</a>
+							</dl>
+							<dl class="clear">
+								<dt>热门景点</dt>
+								<dd><a href="">大皇宫</a> <a href="">湄南河</a> <a href="">沙美岛</a> <a href="">圣淘沙</a> <a href="">鱼尾狮公园</a> <a href="">岘港</a> <a href="">吴哥窟</a></dd>
+							</dl>
+							<dl class="clear">
+								<dt>推荐产品</dt>
+								<dd><a href="">泰国清迈4晚5日游</a> <a href="">清新泰国5晚6日半自助游</a> <a href="">吴哥4晚5日经典游</a> <a href="">越南岘港5晚6日半自助游</a>
+							</dl>
+							<dl class="clear">
+								<dt>当季热卖</dt>
+								<dd><a href="">“新双城”清迈、清莱双城4晚5日游</a> <a href="">越南岘港4晚5日半自助游</a> <a href="">柬埔寨暹粒3晚5日经典游</a> <a href="">新加坡马来西亚4晚6日经典游</a>
+							</dl>
+						</div>
+
+						<div class="dtdd">
+							<dl>
+								<dt><h2>港澳台&日本</h2></dt>
+								<dd><a href="">台湾</a> <a href="">日本</a> <a href="">澳门</a> <a href="">香港</a></dd>
+							</dl>
+						</div>
+						<div class="tabs-detail">
+							<dl class="clear">
+								<dt>热门目的地</dt>
+								<dd><a href="">日本</a> <a href="">本州</a> <a href="">东京</a> <a href="">大阪</a> <a href="">京都</a> <a href="">北海道</a> <a href="">香港</a> <a href="">澳门</a> <a href="">台北</a>
+							</dl>
+							<dl class="clear">
+								<dt>热门方式</dt>
+								<dd><a href="">日本古都行</a> <a href="">日本本州</a> <a href="">日本北海道</a> <a href="">富士山</a>
+							</dl>
+							<dl class="clear">
+								<dt>当地玩乐</dt>
+								<dd><a href="">曼谷</a> <a href="">清迈</a> <a href="">普吉</a> <a href="">新加坡</a> <a href="">苏梅岛</a> <a href="">马来西亚</a> <a href="">斯里兰卡</a></dd>
+							</dl>
+							<dl class="clear">
+								<dt>推荐产品</dt>
+								<dd><a href="">日本本州6晚7日游</a> <a href="">日本三古都5晚6日全景游</a> <a href="">东京4晚5日半自助游</a>
+							</dl>
+							<dl class="clear">
+								<dt>当季热卖</dt>
+
+								<dd><a href="">日本5晚6日半自助游，静阪，双温泉</a> <a href="">【开心驴行】日本本州5晚6日半自助游</a> <a href="">日本5晚6日游</a>
+							</dl>
+						</div>
+
+						<div class="dtdd">
+							<dl>
+								<dt><h2>欧洲&美洲</h2></dt>
+								<dd><a href="">澳洲</a> <a href="">欧洲</a> <a href="">美洲</a> <a href="">阿联酋</a></dd>
+							</dl>
+						</div>
+						<div class="tabs-detail">
+							<dl class="clear">
+								<dt>欧洲热门旅游地</dt>
+								<dd><a href="">希腊</a> <a href="">英国</a> <a href="">德国</a> <a href="">俄罗斯</a> <a href="">葡萄牙</a> <a href="">西班牙</a> <a href="">匈牙利</a> <a href="">捷克</a> <a href="">奥地利</a> <a href="">意大利</a> <a href="">瑞士</a> <a href="">法国</a>
+							</dl>
+							<dl class="clear">
+								<dt>欧洲热门玩法</dt>
+								<dd><a href="">东欧连线</a> <a href="">法瑞意连线</a> <a href="">西班牙+葡萄牙</a> <a href="">俄罗斯一地</a>
+							</dl>
+							<dl class="clear">
+								<dt>美洲热门目的地</dt>
+								<dd><a href="">拉斯维加斯</a> <a href="">洛杉矶</a> <a href="">纽约</a> <a href="">加拿大</a> <a href="">夏威夷</a>
+							</dl>
+							<dl class="clear">
+								<dt>美洲热门玩法</dt>
+								<dd><a href="">加拿大</a> <a href="">美国全景</a> <a href="">美国西海岸</a> <a href="">夏威夷</a>
+							</dl>
+							<dl class="clear">
+								<dt>推荐产品</dt>
+								<dd><a href="">俄罗斯5晚7日经典游</a> <a href="">美东西海岸-夏威夷12晚14日全景游</a> <a href="">美国关岛3晚5日半自助游</a> <a href="">加拿大西海岸7晚9日深度游</a>
+							</dl>
+						</div>
+
+						<div class="dtdd">
+							<dl>
+								<dt><h2>澳洲&中东非</h2></dt>
+								<dd><a href="">欧洲</a> <a href="">俄罗斯</a> <a href="">北美洲</a> <a href="">南美洲</a> <a href="">美洲当地游</a></dd>
+							</dl>
+						</div>
+						<div class="tabs-detail">
+							<dl class="clear">
+								<dt>热门旅游地</dt>
+								<dd><a href="">曼谷</a> <a href="">清迈</a> <a href="">普吉</a> <a href="">新加坡</a> <a href="">苏梅岛</a> <a href="">马来西亚</a> <a href="">斯里兰卡</a> <a href="">柬埔寨</a> <a href="">尼泊尔</a> <a href="">越南</a> <a href="">美奈</a> <a href="">印度</a> <a href="">岘港</a> <a href="">芽庄</a></dd>
+							</dl>
+							<dl class="clear">
+								<dt>热门方式</dt>
+								<dd><a href="">曼谷</a> <a href="">清迈</a> <a href="">普吉</a> <a href="">新加坡</a> <a href="">苏梅岛</a> <a href="">马来西亚</a> <a href="">斯里兰卡</a></dd>
+							</dl>
+							<dl class="clear">
+								<dt>当地玩乐</dt>
+								<dd><a href="">曼谷</a> <a href="">清迈</a> <a href="">普吉</a> <a href="">新加坡</a> <a href="">苏梅岛</a> <a href="">马来西亚</a> <a href="">斯里兰卡</a></dd>
+							</dl>
+							<dl class="clear">
+								<dt>景点门票</dt>
+								<dd><a href="">曼谷</a> <a href="">清迈</a> <a href="">普吉</a> <a href="">新加坡</a> <a href="">苏梅岛</a> <a href="">马来西亚</a> <a href="">斯里兰卡</a></dd>
+							</dl>
+							<dl class="clear">
+								<dt>当季热卖</dt>
+								<dd><a href="">曼谷</a> <a href="">清迈</a> <a href="">普吉</a> <a href="">新加坡</a> <a href="">苏梅岛</a> <a href="">马来西亚</a> <a href="">斯里兰卡</a></dd>
+							</dl>
+						</div>
+
+						<div class="dtdd">
+							<dl>
+								<dt><h2>澳洲&中东非</h2></dt>
+								<dd><a href="">迪拜</a> <a href="">埃及</a> <a href="">土耳其</a> <a href="">新西兰</a> <a href="">澳洲</a> </dd>
+							</dl>
+						</div>
+						<div class="tabs-detail">
+							<dl class="clear">
+								<dt>热门目的地</dt>
+								<dd><a href="">以色列</a> <a href="">土耳其</a> <a href="">埃及</a> <a href="">阿联酋</a> <a href="">新西兰</a> <a href="">澳大利亚</a> <a href="">约旦</a>
+							</dl>
+							<dl class="clear">
+								<dt>热门玩法</dt>
+								<dd><a href="">新西兰一地</a> <a href="">澳新连线</a> <a href="">中东风情迪拜+埃及</a> <a href="">以色列+约旦</a> <a href="">澳大利亚一地</a>
+							</dl>
+							<dl class="clear">
+								<dt>热门景点</dt>
+								<dd><a href="">卡帕多奇亚</a> <a href="">狮身人面像</a> <a href="">扎耶德清真寺</a> <a href="">皇后镇</a> <a href="">悉尼</a> <a href="">耶路撒冷</a>
+							</dl>
+							<dl class="clear">
+								<dt>景点门票</dt>
+								<dd><a href="">曼谷</a> <a href="">清迈</a> <a href="">普吉</a> <a href="">新加坡</a> <a href="">苏梅岛</a> <a href="">马来西亚</a> <a href="">斯里兰卡</a></dd>
+							</dl>
+							<dl class="clear">
+								<dt>推荐产品</dt>
+								<dd><a href="">阿联酋4晚7日半自助游</a> <a href="">阿联酋4晚6日经典游</a> <a href="">澳大利亚、新西兰、凯恩斯、墨尔本12日游</a> <a href="">以色列，约旦，埃及10晚13日多国连线游</a>
+							</dl>
+						</div>
+
+						<div class="dtdd">
+							<dl>
+								<dt><h2>邮轮</h2></dt>
+								<dd><a href="">阿拉加斯加航线</a> <a href="">地中海航线</a> <a href="">日本航线</a></dd>
+							</dl>
+						</div>
+						<div class="tabs-detail">
+							<dl class="clear">
+								<dt>热门航线</dt>
+								<dd><a href="">日本航线</a> <a href="">东南亚航线</a> <a href="">地中海航线</a> <a href="">加勒比海航线</a>
+							</dl>
+							<dl class="clear">
+								<dt>热门邮轮</dt>
+								<dd><a href="">歌诗达邮轮</a> <a href="">皇家加勒比邮轮</a> <a href="">公主邮轮</a> <a href="">地中海邮轮</a>
+							</dl>
+							<dl class="clear">
+								<dt>出发港口</dt>出发港口
+								<dd><a href="">上海</a> <a href="">天津</a> <a href="">香港</a> <a href="">成都</a> <a href="">广州</a>
+							</dl>
+							<dl class="clear">
+								<dt>当季热卖</dt>
+								<dd><a href="">邮轮错峰</a> <a href="">国庆特惠</a>
+							</dl>
+						</div>
+				</div>
+			</div>
+			<!-- 	2.1、banner-右边	 -->
+			<div id="banner-right">
+				<!-- 	2.1.1、banner-右上	 -->
+				<div id="ban-search" class="clear">
+					<div class="search-types">
+						<ul>
+							<li>
+								<span class="active">跟团游</span>
+								<i class="sign active">◆</i>
+							</li>
+							<li>
+								<span> 机票+酒店</span>
+								<i class="sign">◆</i>
+							</li>
+							<li>
+								<span> 酒店+景点</span>
+								<i class="sign">◆</i>
+							</li>
+							<li>
+								<span>当地游</span>
+								<i class="sign">◆</i>
+							</li>
+							<li>
+								<span>游轮</span>
+								<i class="sign">◆</i>
+							</li>
+							<li>
+								<span>签证</span>
+								<i class="sign">◆</i>
+							</li>
+						</ul>
+					</div>
+					<div class="search-box">
+						<div>
+							<a href="javascript:;" class="location">杭州</a>
+							<a href="javascript:;" class="behavior">出发</a>
+						</div>
+						<div>
+							<input type="text" placeholder="请输入目的地、主题、或关键词" class="text">
+							<ul class="box-choices">
+								<li><a href="">欧洲</a> <a href="">泰国</a> <a href="">长滩岛</a></li>
+							</ul>
+						</div>
+						<div>
+							<input type="button" class="go" value="搜索">
+						</div>
+					</div>
+				</div>
+				<!-- 	2.1.1、banner-右中 -->
+				<div id="big-img" class="clear">
+					<ul class="banner-imgs" style=" transition:all .3s linear;" data-load="bannerImgs">
+					</ul>
+					<ul class="banner-inds"  data-load=bannerInds>
+					</ul>
+					<!--左右方向按钮-->
+					<a href="script:;" class="ck-slide ck-left" data-move="left"></a>
+					<a href="script:;" class="ck-slide ck-right" data-move="right"></a>
+				</div>
+				<!-- 	2.1.1、banner-右下	 -->
+				<div id="small-img" class="clear">
+					<a href=""><img src="img/4-1.jpg" alt="img"></a>
+					<a href=""><img src="img/4-1.jpg" alt="img"></a>
+					<a href=""><img src="img/4-1.jpg" alt="img"></a>
+					<a href=""><img src="img/4-1.jpg" alt="img"></a>
+				</div>
+			</div>
+		</div>
+			
+		<!-- 	3、优惠活动 -->
+		<div id="activities">
+			<!-- 	3.1、促销、清仓、精选	 -->
+			<div id="act-tabs">
+				<ul class="tabs-titles clear">
+					<li><a href="script:;" class="active">优惠促销</a></li>
+					<li><a href="script:;">甩尾清仓</a></li>
+					<li><a href="script:;">海岛精选游</a></li>
+				</ul>
+				<div class="tabs-box">
+
+				</div>
+			</div>
+			<!-- 	3.1、最新活动	 -->
+			<div id="latest-activity">
+				<p>最新活动</p>
+				<div>
+					<img src="img/saiban.jpg" alt="img">
+				</div>
+				<div>
+					<img src="img/15.jpg" alt="img">
+				</div>
+				<div>
+					<img src="img/taiguo.jpg" alt="img">
+				</div>
+			</div>
+		</div>
+
+		<!-- 	4、floors	 -->
+		<div id="floors">
+			<!-- 	4、海岛	 -->
+			<div class="floor">
+				<!-- 	4.1、海岛-上	 -->
+				<div class="f-titles">
+					<div class="title">海岛</div>
+					<ul class="subtitles clear">
+						<li><a class="active" data-toggle="tab" href="script:;">小驴推荐</a></li>
+						<li><a data-toggle="tab" href="script:;">自由行</a></li>
+						<li><a data-toggle="tab" href="script:;">错峰出游</a></li>
+					</ul>
+					<a href="#">更多小驴推荐产品</a>
+				</div>
+				<!-- 	4.2、海岛-下	 -->
+				<div class="f-contents">
+					<!--左-->
+					<div class="places clear">
+						<div class="tit">
+							<div class="tit-place">
+								<h2>海岛</h2>
+							</div>
+							<ul class="clear">
+								<li><a href="#">长滩岛</a></li>
+								<li><a href="#">普吉岛</a></li>
+								<li><a href="#">巴厘岛</a></li>
+								<li><a href="#">塞班岛</a></li>
+								<li><a href="#">宿务薄荷</a></li>
+								<li><a href="#">苏梅岛</a></li>
+								<li><a href="#">沙巴</a></li>
+								<li><a href="#">芽庄</a></li>
+							</ul>
+						</div>
+						<img src="img/ul-bottom.jpg" alt="img">
+					</div>
+					<!--右-->
+					<div class="picsBox-Island"></div>
+				</div>
+			</div>
+			<!-- 	5、港澳台&日本	 -->
+				<div class="floor">
+					<!-- 	5.1-上	 -->
+					<div class="f-titles">
+						<div class="title">港澳台&日本	</div>
+						<ul class="subtitles clear">
+							<li><a class="active" href="">小驴推荐</a></li>
+							<li><a href="">自由行</a></li>
+							<li><a href="">错峰出游</a></li>
+						</ul>
+						<a href="#">更多小驴推荐产品</a>
+					</div>
+					<!-- 	5.2、-下	 -->
+					<div class="f-contents">
+						<!-- 左 -->
+						<div class="places clear">
+							<div class="tit">
+								<div class="tit-place">
+									<h2>日本</h2>
+								</div>
+								<ul class="clear">
+									<li><a href="#">日本</a></li>
+									<li><a href="#">九州</a></li>
+									<li><a href="#">冲绳</a></li>
+									<li><a href="#">本州</a></li>
+									<li><a href="#">北海道</a></li>
+								</ul>
+								<div class="tit-place">
+									<h2>港澳台</h2>
+								</div>
+								<ul class="clear">
+									<li><a href="#">香港</a></li>
+									<li><a href="#">台湾</a></li>
+									<li><a href="#">澳门</a></li>
+								</ul>
+							</div>
+							<img src="img/ul-bottom.jpg" alt="img">
+						</div>
+						<!-- 右 -->
+						<div class="picsBox-Japan"></div>
+					</div>
+				</div>
+			<!-- 	6、东南亚&南亚	 -->
+				<div class="floor">
+					<!-- 	6.1-上	 -->
+					<div class="f-titles">
+						<div class="title">东南亚&南亚	</div>
+						<ul class="subtitles clear">
+							<li><a class="active" href="">小驴推荐</a></li>
+							<li><a href="">自由行</a></li>
+							<li><a href="">错峰出游</a></li>
+						</ul>
+						<a href="#">更多小驴推荐产品</a>
+					</div>
+					<!-- 	6.2、-下	 -->
+					<div class="f-contents">
+						<div class="places clear">
+							<div class="tit">
+								<div class="tit-place">
+									<h2>东南亚</h2>
+								</div>
+								<ul class="clear">
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">泰国</a></li>
+									<li><a href="#">岘港</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">曼谷</a></li>
+									<li><a href="#">芽庄</a></li>
+									<li><a href="#">芭提雅</a></li>
+								</ul>
+							</div>
+							<img src="img/ul-bottom.jpg" alt="img">
+						</div>
+						<div class="picsBox-SoutheastAsia"></div>
+					</div>
+				</div>
+			<!-- 	7、澳洲&中东非   -->
+					<div class="floor">
+						<!-- 	7.1-上	 -->
+						<div class="f-titles">
+							<div class="title">澳洲&中东非	</div>
+							<ul class="subtitles clear">
+								<li><a class="active" href="">小驴推荐</a></li>
+								<li><a href="">自由行</a></li>
+								<li><a href="">错峰出游</a></li>
+							</ul>
+							<a href="#">更多小驴推荐产品</a>
+						</div>
+						<!-- 	7.2、-下	 -->
+						<div class="f-contents">
+							<div class="places clear">
+								<div class="tit clear">
+									<div class="tit-place clear">
+										<h2>澳洲</h2>
+									</div>
+									<ul class="clear">
+										<li><a href="#">澳大利亚</a></li>
+										<li><a href="#">新西兰</a></li>
+									</ul>
+									<div class="tit-place clear">
+										<h2>中东非</h2>
+									</div>
+									<ul class="clear">
+										<li><a href="#">埃及</a></li>
+										<li><a href="#">迪拜</a></li>
+									</ul>
+								</div>
+								<img src="img/ul-bottom.jpg" alt="img">
+							</div>
+							<div class="picsBox-Africa"></div>
+						</div>
+					</div>
+			<!-- 	8、欧洲&美洲	 -->
+					<div class="floor">
+						<!-- 	8.1-上	 -->
+						<div class="f-titles">
+							<div class="title">欧洲&美洲	</div>
+							<ul class="subtitles clear">
+								<li><a class="active" href="">小驴推荐</a></li>
+								<li><a href="">自由行</a></li>
+								<li><a href="">错峰出游</a></li>
+							</ul>
+							<a href="#">更多小驴推荐产品</a>
+						</div>
+						<!-- 	8.2、-下	 -->
+						<div class="f-contents">
+							<div class="places clear">
+								<div class="tit">
+									<div class="tit-place">
+										<h2>欧洲</h2>
+									</div>
+									<ul class="clear">
+										<li><a href="#">法意瑞热卖</a></li>
+										<li><a href="#">东欧经典游</a></li>
+										<li><a href="#">西普深度游</a></li>
+										<li><a href="#">北欧峡湾游</a></li>
+										<li><a href="#">英国爱尔兰</a></li>
+										<li><a href="#">一国深度游</a></li>
+									</ul>
+									<div class="tit-place">
+										<h2>美洲</h2>
+									</div>
+									<ul class="clear">
+										<li><a href="#">美国跟团游</a></li>
+										<li><a href="#">美国当地游</a></li>
+										<li><a href="#">东西海岸全景</a></li>
+										<li><a href="#">美国西海岸</a></li>
+										<li><a href="#">加拿大</a></li>
+										<li><a href="#">中南美洲</a></li>
+									</ul>
+								</div>
+								<img src="img/ul-bottom.jpg" alt="img">
+							</div>
+							<div class="picsBox-European"></div>
+						</div>
+					</div>
+			</div>
+
+		<!-- 	9、主题旅游	 -->
+		<div id="theme">
+			<!-- 	9.1、主题旅游推荐	 -->
+			<div class="theme">主题旅游</div>
+			<div class="imgs">
+				<div><a href="script:;"><img src="img/theme.jpg" alt="img"></a></div>
+				<div><a href="script:;"><img src="img/theme.jpg" alt="img"></a></div>
+				<div><a href="script:;"><img src="img/theme.jpg" alt="img"></a></div>
+				<div><a href="script:;"><img src="img/theme.jpg" alt="img"></a></div>
+				<div><a href="script:;"><img src="img/theme.jpg" alt="img"></a></div>
+				<div><a href="script:;"><img src="img/theme.jpg" alt="img"></a></div>
+			</div>
+			<!-- 	9.2、免签国	 -->
+			<div>
+				<img src="img/visa-free.jpg" alt="img">
+			</div>
+		</div>
+
+		<!-- 	10、页面尾部	 -->
+		<!-- 返回顶部按钮 -->
+		<div></div>
+	</div>
+	<div id="footer">
+        <ul class="promise">
+            <li>
+                <div class="bg_logo1 lt"></div>
+                <div class="lt">
+                    <p class="promise_title">价格保证</p>
+                    <p class="promise_info">同类产品，保证低价</p>
+                </div>
+            </li>
+            <li>
+                <div class="bg_logo2 lt"></div>
+                <div class="lt">
+                    <p class="promise_title">退订保障</p>
+                    <p class="promise_info">因特殊情况影响出行，保证退订</p>
+                </div>
+            </li>
+            <li>
+                <div class="bg_logo3 lt"></div>
+                <div class="lt">
+                    <p class="promise_title">救援保障</p>
+                    <p class="promise_info">旅途中遇意外情况，保证援助</p>
+                </div>
+            </li>
+            <li>
+                <div class="bg_logo4 lt"></div>
+                <div class="lt">
+                    <p class="promise_title">7x24小时服务</p>
+                    <p class="promise_info">快速响应，全年无休</p>
+                </div>
+            </li>
+        </ul>
+        <div class="about">
+            <ul class="clear lt">
+                <li>
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a>起航简介</a></dd>
+                        <dd><a>旅游度假资历</a></dd>
+                        <dd><a>网站地图</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>联系我们</dt>
+                        <dd><a>门店信息</a></dd>
+                        <dd><a>意见反馈</a></dd>
+                        <dd><a>微博</a></dd>
+                        <span>24小时服务电话</span>
+                        <span class="tel">1010-6666</span>
+                        <span>免长途费，全年无休</span>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>订购指南</dt>
+                        <dd><a>门票使用</a></dd>
+                        <dd><a>常见问题</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd><a>起航账户支付</a></dd>
+                        <dd><a>起航礼品卡支付</a></dd>
+                        <dd><a>电话预授权支付</a></dd>
+                        <dd><a>分期付款</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>特色服务</dt>
+                        <dd><a>团购预约</a></dd>
+                        <dd><a>分销系统</a></dd>
+                        <dd><a>起航联盟</a></dd>
+                        <dd><a>开放平台</a></dd>
+                        <dd><a>供应商加盟合作</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>售后服务</dt>
+                        <dd><a>退换货说明</a></dd>
+                        <dd><a>投诉建议</a></dd>
+                        <span class="check_tel">举报电话:</span>
+                        <span>201-123456</span>
+                        <span>举报邮箱:</span>
+                        <span>tom@qq.com</span>
+                    </dl>
+                </li>
+            </ul>
+            <div class="code lt">
+                <p class="code_title">订阅特价、促销信息</p>
+                <input type="text" placeholder="输入Email(如：a@bc.c)">
+                <button>订阅</button>
+                <div class="two_code">
+                    <img src="img/2d_code-1.png" alt="">
+                    <span>扫描下载起航客户端手机预定，优惠多多</span>
+                </div>
+                <p>杭州旅游投诉电话：021-6439132</p>
+            </div>
+        </div>
+        <div class="legal">
+            <p>浙江杭州起航国际有限公司。旅行业务经营许可证编号：L—ZJ—CJ00536</p>
+        </div>
+    </div>
+	<script src="js/jquery.js"></script>
+	<script src="js/outland.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/search.js"></script>
+</body>
+</html>

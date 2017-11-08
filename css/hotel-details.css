@@ -1,0 +1,604 @@
+/****本页面仅针对details-page.html设置样式*********/
+
+body{
+    height: 3000px; 
+}
+
+/***全局样式定义***/
+.details_page{
+    width:1200px; margin:0 auto;
+}
+.font3{font-size: 30px !important;}
+.font2{font-size: 20px !important;}
+.font1{font-size: 14px !important;}
+.block:before{content:'';display:block;}
+.orange{color:#FF6600}
+.bgc_orange{background-color: #FF8800}
+.bgc_pink{  background: #EA1786;}
+.relative{position:relative}
+.absolute{position:absolute}
+.border{border:1px solid #ccc}
+.orange_border{border:2px solid #FF9900}
+.border-show:hover{  border:1px solid #ccc;  }
+.sprite{
+    background:url("../img/beijing/product-imgs/product-detail-all.png");
+}
+
+
+/********产品详情主体头部************************/
+body{
+	background-color: #F5F5F5;
+}
+.product-top{
+    min-height:200px; border:1px solid #DEDEDE;
+    margin-bottom:10px;
+    position:relative;
+    padding:20px;
+    background:#fff;
+}
+
+.product-top h2{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
+}
+.product-top h2 p{
+	font-size: 14px;
+}
+.product-top h2 p .symbol{
+	font-size: 20px;
+	color: #f60;
+}
+.product-top h2 p .price{
+	font-size: 36px;
+	font-weight: bold;
+	color: #f60;
+	margin-right: 10px;
+}
+.product-top h2 p a{
+    display: inline-block;
+    height: 34px;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+	color: #fff;
+    background-color: #ff8700;
+    font-size: 16px;
+    line-height: 34px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.product-top h2 p a:hover{
+	background-color: #ff6800;
+	text-decoration: none;
+}
+/*********1.1  top-left **********/
+.product-top .top-left{
+    min-height:350px; /*暂定高度，待取消*/
+    margin-right:15px;
+    float:left;
+    position:relative;
+}
+/********1.1.1 product_top_img********/
+.top-left .product_top_img{
+    height:310px;
+    margin-bottom:5px;
+}
+
+.top-left .leftImg{
+    width:450px; height:308px;
+    float:left;
+    position: relative;
+}
+.top-left .leftImg>img{
+     width:450px; height:300px;
+     display:none;
+ }
+.top-left .leftImg .imgShow{
+    display:block;
+}
+.leftImg .left-arrow{
+    background-position: -298px -305px;
+    width: 32px;
+    height: 64px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.7;
+    z-index: 100;
+    display: none;
+}
+.leftImg .right-arrow{
+    background-position: -342px -305px;
+    width: 32px;
+    height: 64px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.7;
+    z-index: 100;
+    display: none;
+
+}
+.leftImg .right-arrow:hover,
+.leftImg .left-arrow:hover{
+    opacity: 1;
+}
+.top-left .rightImg{
+    width:98px;height:308px;
+    float: right;
+}
+.top-left .rightImg .smImgs{
+    width:96px;height:270px;
+    overflow: hidden;
+}
+.top-left .rightImg .smImgs .smImgs-active{
+    border:2px solid #ff9900;
+    opacity: 1;
+}
+.top-left .rightImg .smImgs li img{
+    box-sizing: border-box;
+    width:95px; height:64px;
+    margin-bottom: 4px;
+    opacity: 0.7;
+}
+.top-left .rightImg .smImgs li img:hover{
+    opacity: 1;
+}
+
+.top-left .rightImg .imgPlace{
+    background:url("../img/beijing/product-imgs/product-detail-all.png");
+    display:inline-block;
+    width:35px; height:30px;
+    margin:auto;
+    margin-left:10px;
+}
+.top-left .rightImg .slipUp{
+    background-position: -222px -305px;
+}
+.top-left .rightImg .slipDown{
+    background-position: -257px -305px;
+}
+
+.product-top .top-right{
+    width:575px; 
+    min-height:350px;
+    padding: 20px 0;
+    float:left;
+    position:relative;   
+    color: #666;
+}
+.product-top .top-right .info{
+	margin-bottom: 10px;
+}
+.product-top .top-right .info span{
+    line-height: 24px;
+}
+.product-top .top-right .info .info-title{
+	float: left;
+    color: #999;
+    width: 80px;
+    margin-right: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+.product-top .top-right .recommend{
+    width: 600px;
+    height: 80px;
+    padding: 20px 0 20px 80px;
+    background: url(../img/head.jpg) no-repeat 0 0;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+    color: #333;
+    border-radius: 5px;
+}
+.product-top .top-right .recommend h4{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.product-top .top-right .comment{
+	padding: 10px;
+}
+.product-top .top-right .comment .glyphicon-thumbs-up{
+    color: #ccc;
+    font-size: 16px;
+}
+.product-top .top-right .comment span{
+	cursor: pointer;
+	color: #999;
+}
+.product-top .top-right .comment span:hover{
+	color: #F60;
+}
+.product-top .top-right .comment>span:first-child::after{
+	content: "";
+	display: inline-block;
+	width: 2px;
+	height: 15px;
+	margin: 0 20px;
+	background: #ccc;
+	
+}
+.product-top .top-right .comment .comment-score{
+	padding-right: 4px;
+    font-size: 18px;
+    color: #f80;
+}
+.product-top .top-right .comment p{
+	line-height: 40px;
+	border-top: 1px dotted #ccc;
+	margin-top: 10px;
+}
+
+
+/*************main-part**********/
+/*****nav**********/
+/*产品详情*/
+/*行程介绍*/
+/*费用说明*/
+/*预订须知*/
+/*驴友点评*/
+
+.main-part{
+    width:100%;
+    border:1px solid #DEDEDE;
+    background-color: #fff;
+}
+.page_nav{
+    width: 1200px;
+    height: 53px;
+    padding-top: 10px;
+    margin-top: -10px;
+    line-height: 43px;
+    border-bottom:2px solid #EA1786;
+    font-size: 16px;
+    background-color: #F8F8F8;
+    z-index: 100;
+}
+.page_nav a{
+    display: inline-block;
+    height:40px;
+    padding: 0 20px;
+    line-height: 40px;
+    border-right:1px solid #E3E3E3;
+    border-top:1px solid #E3E3E3;
+    text-align: center;
+    margin-left:-5px;
+}
+.page_nav a:first-child{
+    margin-left: 0;
+}
+.page_nav a:hover,
+.page_nav a:focus{   
+    text-decoration: none;
+}
+.page_nav a:hover:not(.nav-active){
+    border:1px solid #EA1786;
+    transform: translateY(1px);
+    background-color: #FEF2F9;
+    color:#EA1786;
+}
+.page_nav .nav-active{
+    background: #EA1786;
+    color:#fff;
+}
+
+.hotel-category .date{
+	padding: 15px;
+	text-align: right;
+	background-color: #FBFBFB;
+    color: #666;
+	border-bottom: 2px solid #ccc;
+	font-size: 13px;
+    position: relative;
+}
+.hotel-category .date input{
+	height: 30px;
+	margin: 0 10px;
+	text-indent: 20px;
+}
+.hotel-category .date span.num{
+    color: #f38;
+    margin: 0 10px;
+}
+.hotel-category .date .box{
+    position: absolute;
+    float: right;
+    top: 60px;
+    right: 95px;
+    display: none;
+}
+.hotel-category .date .box table{
+    text-align: center;
+}
+.hotel-category .date .box table td{
+    width: 45px;
+    height: 30px;
+    background-color: #fff;
+}
+.hotel-category .date .box table .today{
+    background-color: #ff8300;
+    color: #fff;
+}
+.hotel-category .date .box thead button{
+    width: 90px;
+    height: 30px;
+    background-color: #ff8300;
+    color: #fff;
+}
+.hotel-category .date .box tbody td.choose{
+    background: #EA1786;
+    color: #fff;
+}
+.hotel-category .room-list{
+    padding: 10px 20px 40px;
+}
+.hotel-category  .room{
+    padding: 15px 15px 20px 20px;
+    border-bottom: 1px solid #ddd;
+}
+.hotel-category  .room .img{
+    width: 15%;
+    height: 180px;
+}
+.hotel-category  .room .img img{
+    width: 150px;   
+    height: 100px;
+    margin: 10px 0;  
+}
+.hotel-category  .room .details{
+    width: 85%;
+}
+.hotel-category  .room .details p{
+    line-height: 30px;
+}
+.hotel-category  .room .room-info{
+    color: #999;
+}
+.hotel-category  .room .room-info span:not(:last-child)::after{
+    content: "|";
+    display: inline-block;
+    margin: 0 15px;
+}
+.hotel-category  .room table{
+    margin-top: 30px;
+}
+.hotel-category  .room thead{
+    background-color: #FBFBFB;
+}
+.hotel-category  .room td{
+    height: 40px;
+    min-width:  120px;
+    padding-left: 15px;
+}
+.hotel-category  .room td:first-child{
+    width:  300px;
+}
+.hotel-category tbody tr:hover{
+    background-color: #fffaee;
+}
+.hotel-category .room tbody td{
+    height: 50px;   
+}
+.hotel-category .room .price{
+    color: #f60;
+    padding-bottom: 1px;
+    cursor: default;
+    font-size: 14px;
+    border-bottom: 1px dashed #f60;
+}
+.hotel-category .room .buy{
+    padding: 5px 10px;
+    background-color: #ff8300;
+    color: #fff;
+    border-radius: 3px;
+}
+.hotel-category .room .buy:hover{
+    text-decoration: none;
+}
+.product-detail{
+    width: 1200px;
+    background: #fff;
+    margin-top: 18px;
+    float: left;
+    border: 1px solid #DDD;
+    padding: 22px 20px 0px;
+}
+.product-detail h3{
+    margin: 15px 0;
+    height: 42px;
+    line-height: 42px;
+    font-size: 22px;
+    color: #656565;
+    border-bottom: #E3E3E3 solid 2px;
+}
+.product-detail p{
+    line-height: 22px;
+}
+.product-detail xmp{
+    font-size: 14px;
+    color: #444;
+    line-height: 21px;
+    margin-bottom: 6px;
+    word-wrap: break-all;
+}
+.product-detail .hotel-title{
+    font-size: 16px;
+    color: #333;
+    padding: 9px 0px 8px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+.product-detail img{
+    margin-left: 70px;
+}
+.product-detail .service-info{
+    border: 1px solid #ddd;
+    background: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666;
+}
+.product-detail .service-info li{
+    padding: 13px 20px;
+    overflow: hidden;
+    cursor: auto;
+}
+#map+img{
+    margin: 0;
+}
+.product-detail .service-info li:nth-of-type(odd){
+    background-color: #FBFBFB;
+}
+
+
+/*********comments -intro*************/
+.main-part .comments .intro-position5{
+    background-position: -222px -113px;
+}
+.comments{  padding-bottom: 30px;}
+.comments-title .title-left, .title-right{
+    width: 50%;
+    height: 100px;
+    float: left;
+    color: #8c8c8c;
+    text-align: center;
+}
+.content-title{
+    width: 100%;
+    height: 40px;
+    border:1px solid #ccc;
+    background-color: #F6F6F6;
+    margin: 10px 0;
+}
+.content-title li{
+    display: inline-block;
+    width: 105px;
+    height: 100%;
+    line-height: 40px;
+    background-color: #FF8800;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+.custom-comments .single{
+    margin-bottom:25px;
+}
+.custom-comments .content-top{
+    color: #8c8c8c;
+}
+.custom-comments .content-top .elite{
+    background-color: #FF444F;
+    color: #fff;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    margin-right: 10px;
+}
+.custom-comments .content-middle{
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 15px 0;
+    text-align: justify;
+    position: relative;
+    color:#333;
+}
+.custom-comments .middle-show{
+    overflow:auto;
+    height:auto;
+}
+.custom-comments .content-middle .content-show{
+    display: inline-block;
+    background-color: #fff;
+    color: #b4b4b4;
+    font-size: 12px;
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.custom-comments .content-middle .content-show:hover{
+    color: #ff9900;
+}
+.comments .content-end{
+    height: 18px;
+    line-height: 18px;
+    color: #8c8c8c;
+}
+.content-end .end-left{
+    display: inline-block;
+}
+.content-end .end-left .end-destination{
+    padding-top: 3px;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    width: 320px;
+    overflow: hidden;
+    margin-left: 10px;
+    text-align: center;
+}
+.content-end .end-right{
+    display: inline-block;
+    float: right;
+    text-align: right;
+    margin-right: 5px;
+}
+.content-end .end-right:hover{
+    cursor:pointer;
+}
+.content-end .end-right i{
+    margin: 0 10px;
+}
+.content-end .end-left .user:hover, .content-end .end-right:hover{
+    color: #ff9900;
+}
+.custom-comments .comments-page{
+    float: right;
+    margin: 20px;
+    color: #676767;
+}
+.custom-comments img{
+    width: 100%;
+}
+.custom-comments .comments-page li{
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 5px;
+    border: 1px solid #c3c3c3;
+}
+.custom-comments .comments-page li:hover{
+    border: 1px solid #FF8800;
+}
+.custom-comments .comments-page li a:hover{
+    text-decoration:none;
+}
+.custom-comments .comments-page li.page-active{
+    background-color: #FF8800;
+    border:0;
+}
+.custom-comments .comments-page li.page-active a{   
+    color: #fff;
+}
+.custom-comments .comments-page li:first-child,li:last-child{
+    margin-bottom: 2px;
+}

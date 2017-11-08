@@ -1,0 +1,387 @@
+img{
+  vertical-align: middle;
+}
+a:hover,
+a:focus{
+  text-decoration: none;
+}
+.main{
+  width:1330px;
+  margin:0 auto;
+  background:#F5F5F5;
+}
+/*1,顶部*/
+div.db{
+  width:100%;
+  height:50px;
+  line-height:50px;
+  background-color:#FAFAFA;
+ 
+}
+div.db-left{
+  float:left;
+}
+
+ul.list>li{
+  float:right;
+  margin:0 4px;
+}
+div.db-right{
+  float:right;
+   position:relative;
+}
+div.db-right .span{
+  display:inline-block;
+  border:7px solid transparent;
+  border-top-color:#9F9F9F;
+}
+.span{
+  margin-top:20px;
+}
+/*2,logo部分*/
+.logo{
+  width:100%;
+  height:60px;
+  background-color:#DD3377;
+  float:left;
+  color:#fff;
+}
+
+div.logo-left{
+  float:left;
+}
+div.logo-left a h1{
+  display:block;
+  float:left;
+  margin: 12px 20px 12px 30px;
+  color: #fff;
+  font-weight: 200;
+  font: left;
+}
+
+ul.logo-list{
+  float:left;
+}
+.logo-list>li{
+  float:left;
+  margin:0 10px;
+}
+.logo-list>li.active{
+  background-color: #A71C53;
+}
+.logo-list a{
+  display:inline-block;
+  padding: 18px 10px;
+  font-size: 18px;  
+  color:#fff;
+}
+div.logo-right{
+  float:right;
+  padding: 6px 5px;
+  border:1px solid #fff;
+  border-radius:5px;
+  margin: 15px 15px 0 0;
+  transition: all .2s linear;
+}
+div.logo-right:hover{
+  transform: translate(1px,1px);
+}
+div.logo-right>a{
+  font:15px "simHei";
+  color:#fff;
+}
+div.logo-right>a:hover,
+div.logo-right>a:focus{
+  text-decoration: none;
+}
+/* 第三部分主体 */
+.subject{
+  width:1330px;
+  float:left;
+  margin-top:20px;
+}
+/* 3.1:左半部分*/
+
+.accordion{ 
+  width:150px;
+  float:left;
+  margin-right:20px;
+  display: none;
+}
+.accordion.show{
+  display: block;
+}
+.accordion>.title{
+  font-size:20px;
+  cursor:pointer;
+}
+.accordion>.content li{
+  padding:6px 30px 6px 20px;
+  font-size: 15px;
+}
+.accordion>.content li.active{
+  background-color: #DD3377;
+  border-radius: 0 15px 15px 0;
+}
+.accordion>.content li.active a{ 
+  color: #fff;
+}
+
+
+/*3.2 中间部分*/
+.main-body{
+  display: none;
+}
+.main-body.show{
+  display: block;
+}
+/* 3.2.1:上部分 */
+.midel{
+  width:1120px;
+  float:left;
+  
+}
+.midel h2{
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.midel-top{
+  width:1170px;
+  border:1px solid #EBEBEB;
+  border-radius:30px;
+  background:#FFFFFF;
+  height:220px;
+  margin-bottom:25px;
+  
+}
+
+.midel .midel_img{
+  display:inline-block;
+  line-height:220px;
+  float:left;
+  margin:0 20px;
+}
+
+.midel_list{
+  float:left;
+  margin-top:59px;
+  margin-right:110px;
+}
+
+div.right_img img{
+  display:block;
+  float:left;
+  margin-top:20px;
+  margin-right:60px;
+}
+
+div.right-list{
+  width:300px;
+  float:left;
+}
+
+div.right-list li{
+  font:13px "simHei";
+  margin-top:20px;
+}
+div.bottom-list ul{
+  display:block;
+  float:left;
+  margin:0 25px;
+}
+
+/* 3.2.2:中间部分*/
+
+table.midel-mid{
+  text-align: center;
+  width:1170px;
+  height:30px;
+  border:1px solid #EBEBEB;
+  border-collapse: collapse;
+}
+.midel-mid td{
+  min-width: 40px;
+  height: 30px;
+  color: #777;
+}
+.midel-mid thead td{
+   background-color: #FAFAFA;
+}
+.midel-mid tbody td{
+  border-bottom: 1px solid #EBEBEB;
+}
+.midel-mid tbody tr:nth-child(even){
+  background-color: #fbfbfb;
+}
+.midel-mid tbody td.status{
+  color: #7b7;
+}
+.midel-mid tbody .check,
+.midel-mid tbody .delete{
+  color: #FF8800;
+}
+/*.midel-mid tbody a:*/
+.midel-mids{
+  width:1170px;
+  height:450px;
+  background-color:#FFFFFF;
+  border:1px solid #EBEBEB;
+  margin-bottom:30px;
+}
+.midel-mids .none{
+  position: relative;
+}
+.midel-mids .none a{
+  position: absolute;
+  left: 550px;
+  top: 235px;
+  width: 100px;
+  height: 24px;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  background-color: #FF8800;
+}
+.midel-mids .none a:hover,
+.midel-mids .none a:focus{
+  text-decoration: none;
+}
+.midel-mids .none img{
+  margin-top:167.5px;
+  margin-left:426px;
+}
+
+/*账户设置*/
+.midels{
+  width:1170px;
+  height:500px;
+  background-color:#FFFFFF;
+  float:left;
+}
+
+div.midels-top li{
+  float:left;
+  margin:20px 0 10px 0; 
+  display:inline-block;
+}
+div.midels-top>ul>li:first-child{
+  margin-left: 20px;
+  font-size: 18px;
+}
+div.midels-top>ul>li:last-child{
+  background-color:#FF8800;
+  width:150px;
+  height:21px;
+  text-align:center;
+  line-height:21px;
+  margin-left:860px;
+  font:15px "simHei";
+  padding-top:3px;
+}
+div.midels-top span{
+  color:#fff;
+  cursor:pointer;
+}
+/*动态生成的 操作一列 将修改删除变成两行一列*/
+tbody a{
+  color: #FF8800;
+}
+tbody a:hover{
+  text-decoration: underline;
+}
+/*3.2.3分页按钮*/
+div.pagination{
+  margin-top:30px;
+}
+div.pagination ul{
+  float: right;
+  margin-right: 100px;
+}
+div.pagination li{
+  display:inline-block;
+  font:15px;
+  float:left;
+  margin-right:10px;
+}
+
+div.pagination>ul>li{
+  border:1px solid #DDDDDD;
+  text-align:center;
+  line-height:25px;
+}
+div.pagination>ul>li a{
+  padding: 6px 20px;
+}
+
+
+/* 点击新增常用游客 显示的页面 */
+div.add{
+  width:100%;
+  height:960px;
+  display:none;
+  position:fixed;
+  top: 0;
+  left:0;
+  padding:10px;
+  background-color: rgba(196,196,196,0.5);
+  z-index: 10;
+}
+.container{
+  display:flex;
+  width:600px;
+  height:40px;
+  background-color:#EEEEEE;
+  justify-content:space-between;
+  margin: 200px auto 0;
+}
+div.add li{
+  padding: 0 10px;
+  font-size: 15px;
+  line-height:40px;
+}
+#hidden1,#hidden2{
+cursor:pointer;
+}
+
+.add div.form{
+  width: 600px;
+  background-color:#FFFFFF;
+  margin: 0 auto;
+}
+.add table{
+  margin-left:40px;
+}
+.add form tr{
+  display:block;
+  font:15px "simHei";
+  margin-top:20px;
+}
+.add form span{
+  color:red;
+}
+.add .input{
+  width:400px;
+  height:25px;
+  border: 1px solid #ccc;
+}
+.add .button{
+  width:60px;
+  height:40px;
+}
+.add .submit{
+  width:60px;
+  background-color:#FF8800;
+  color: #fff;
+  cursor: pointer;
+}
+.add .button.close{
+  background-color: #fff;
+  color: #666;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.add table tr:last-child{
+  margin-left:170px;
+  margin-top:50px;
+}

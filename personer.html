@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>个人资料首页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/user-index.css">
+ </head>
+ <body>
+   <div class="main">
+		<header id="header"></header>		 
+		<!-- 第二部分,logo -->
+		 <div class="logo clear">
+		   <!-- 2,1 logo左半部分 -->
+			<div class="logo-left">			  
+			      <a href="index.html"><h1>我的起航</h1></a>
+			 
+				  <ul class="logo-list clear">
+				   <li  class="active"><a href="#">我的首页</a></li>
+				   <li><a href="#">账户设置</a></li>
+				  </ul>			  
+			</div>
+		   <!-- 2,2 logo右半部分 -->
+		    <div class="logo-right">
+		      <a href="index.html">返回起航首页</a>
+		    </div>		
+		 </div>
+        
+		<!-- 第三部分主体 -->
+	    <div class="subject">
+		<!-- 3.1左半部分：下拉菜单 -->
+			<div class="accordion show">
+			  <div class="title" data-triggle="accordion"><img src="img/07-个人资料首页_04.jpg">个人中心</div>
+			  <div class="content fade in">
+				<ul>
+				  <li class="active"><a href="#">我的成长</a></li>
+				  <li><a href="#">我的收藏</a></li>
+				  <li><a href="#">我的点评</a></li>
+				  <li><a href="#">我的游记</a></li>
+				</ul>		  
+			  </div>
+
+			  <div class="title" data-triggle="accordion"><img src="img/07-个人资料首页_06.jpg">订单中心</div>
+			  <div class="content fade">
+				<ul>
+				  <li><a href="#">我的订单</a></li>
+				  <li><a href="#">我的出行</a></li>
+				</ul>		  
+			  </div>		 
+			</div>
+			<div class="accordion">
+				  <div class="title" data-triggle="accordion"><img src="img/07-个人资料首页_39.jpg">账户安全</div>
+				  <div class="content fade in">
+					<ul>
+					  <li><a href="#">安全设置</a></li>
+					  <li><a href="#">修改密码</a></li>
+					</ul>		  
+				  </div>
+
+				  <div class="title" data-triggle="accordion"><img src="img/07-个人资料首页_40.jpg">常用信息</div>
+				  <div class="content fade">
+					<ul id="change">
+					  <li class="active"><a href="#">常用游客信息</a></li>
+					  <li><a href="#">常用收货信息</a></li>
+					</ul>		  
+				  </div>
+
+				  <div class="title" data-triggle="accordion"><img src="img/07-个人资料首页_41.jpg">个人资料</div>
+				  <div class="content fade">
+					<ul>
+					  <li><a href="#">个人信息</a></li>
+					  <li><a href="#">自驾货信息</a></li>
+					  <li><a href="#">头像设置</a></li>
+					</ul>		  
+				  </div>
+			</div>
+        <!-- 3.2中间部分 -->
+			<div class="midel">
+				<!-- 用户首页 -->
+			    <div id="info" class="main-body show">
+			    	<!-- 3.2.1:上部分 -->
+				    	<div class="midel-top clear">
+				    
+						<div class="midel_img">
+						  <img src="img/07-个人资料首页_02.jpg">
+						</div>
+						<div class="midel_list">
+						  <ul>
+							<li>lv1577052psw 
+							  <img src="img/07-个人资料首页_14.jpg">
+							  <span>个人信息</span>
+							</li>
+							<li>
+							  <img src="img/07-个人资料首页_19.jpg">
+							  <span>已绑定手机:<span class="tel">157****9960</span></span>
+							</li>
+							<li>我的特权 <img src="img/07-个人资料首页_34.jpg"></li>
+							<li>
+							  <span><img src="img/07-个人资料首页_16.jpg">待支付:0</span>
+							  &nbsp;&nbsp;&nbsp
+							  <span><img src="img/07-个人资料首页_18.jpg">待点评:0</span>
+							</li>
+						  </ul>
+						</div>
+
+						<div class="right_img">
+						  <img src="img/07-个人资料首页_32.jpg">
+						</div>
+					    
+						<div class=right-list>
+						  <div>
+						  <ul>
+						    <li>
+							  <span><img src="img/07-个人资料首页_10.jpg"></span>
+							  <span>账户余额 &nbsp;&nbsp¥0</span>
+							</li>
+							<li>
+							  <span><img src="img/07-个人资料首页_08.jpg"></span>
+							  <span>奖 &nbsp;&nbsp金 &nbsp;&nbsp¥0 &nbsp;&nbsp写游记赚钱</span>
+							</li>
+							<li><hr></li>
+						  </ul>
+						  </div>
+
+						  <div class=bottom-list>
+						    <ul>
+							  <li>积分</li>
+							  <li>0</li>
+							  <li>积分换礼</li>
+							</ul>
+							<ul>
+							  <li>优惠券</li>
+							  <li>3张</li>						  
+							</ul>
+							<ul>
+							  <li>礼品卡</li>
+							  <li>0张</li>						  
+							</ul>
+						  </div>
+						</div>
+	                </div>      
+				    <!-- 3.2.2:中间部分 -->
+				    <h2>近期订单</h2>
+				    <div class="midel-mids">
+				    	<table class="midel-mid">
+			                <thead >			   
+							  <tr>
+							    <td>产品信息</td>
+								<td>订单金额</td>
+								<td>出行时间</td>
+								<td>订单状态</td>
+								<td>操作</td>
+							  </tr>				
+						    </thead>
+						    <tbody>
+						    	<tr>
+						    		<td>上海梦之龙大酒店</td>
+									<td>2000</td>
+									<td>2017-11-28</td>
+									<td class="status">待消费</td>
+									<td class="function">
+										<a class="check" href="javascript:;">查看</a>
+										<a class="delete" href="javascript:;">删除</a>
+									</td>
+						    	</tr>
+						    	<tr>
+						    		<td>上海梦之龙大酒店</td>
+									<td>2000</td>
+									<td>2017-11-28</td>
+									<td class="status">待消费</td>
+									<td class="function">操作</td>
+						    	</tr>
+						    </tbody>
+			    		</table>
+				    	<div class="none">
+				    		<a href="index.html">去首页看看</a>
+				    		<img src="img/07-个人资料首页_20.jpg">
+				    	</div>
+				    </div>
+			    </div>
+			    <!-- 常用游客信息  -->
+				<div id="msg1" class="main-body midels">
+				  <div class="midels-top clear">
+				    <ul>
+					  <li>常用游客信息</li>
+					  <li id="add1">
+					    <img src="img/07-个人资料首页_42.jpg">
+						<span>新增常用游客</span>
+					  </li>
+					</ul>
+				  </div>
+				  <table class="midel-mid">
+				    <thead>
+					 <tr>
+					  <td>用户姓名</td>
+					  <td>邮箱</td>
+					  <td>电话</td>
+					  <td>身份证号码</td>
+					  <td>操作</td>			  
+					 </tr>
+					</thead>
+					<tbody id="tb1">
+					  <tr>
+						<td colspan="8">
+						  
+						</td>
+				      </tr>
+	                </tbody>			  
+				  </table>
+				  <div class="pagination clear">
+	                 <ul class="clear">
+	                  <li><a href="#">上一页</a></li>
+	                  <li><a href="#">1</a></li>
+	                  <li><a href="#">2</a></li>
+	                  <li><a href="#">3</a></li>
+	                  <li><a href="#">4</a></li>
+	                  <li><a href="#">5</a></li>
+	                  <li><a href="#">下一页</a></li>              
+	                 </ul>
+	              </div>
+				</div> 
+			    <!-- 常用收货信息 -->
+				<div id="msg2" class="main-body midels">
+	              <!-- 3.2.1上半部分 -->
+				  <div class="midels-top clear">
+				    <ul>
+					  <li>常用收货信息</li>
+					  <li id="add2">
+					    <img src="img/07-个人资料首页_42.jpg">
+						<span>新增游客收货信息</span>
+					  </li>
+					</ul>
+				  </div>
+
+				  <!-- 3.2.2动态生成表格 -->
+				  <table class="midel-mid">
+				    <thead>
+					 <tr>
+					  <td>收货人姓名</td>
+					  <td>电话</td>
+					  <td>收货地址</td>
+					  <td>操作</td>			  
+					 </tr>
+					</thead>
+					<tbody id="tb2">
+					  <tr>
+						<td colspan="8">
+						  
+						</td>
+				      </tr>
+	                </tbody>			  
+				  </table>             
+				  <!-- 3.2.3分页按钮 -->
+				  <div class="pagination clear">
+	                 <ul class="clear">
+	                  <li><a href="#">上一页</a></li>
+	                  <li><a href="#">1</a></li>
+	                  <li><a href="#">2</a></li>
+	                  <li><a href="#">3</a></li>
+	                  <li><a href="#">4</a></li>
+	                  <li><a href="#">5</a></li>
+	                  <li><a href="#">下一页</a></li>              
+	                 </ul>
+	              </div>
+	            </div>
+
+				<!-- 点击新增常用游客 显示的页面 -->
+	            <div class="add" id="display1">
+				  <div>
+				    <ul class="container">
+					  <li>新增常用游客</li>
+					  <li id="hidden1" class="close"><img src="img/07-个人资料首页_44.jpg"></li>
+					</ul>
+				  </div>
+				  
+				  <div class="form">
+				  <form action="data/add_tourist.php" method="post">
+					  <table>
+						<tr>
+						  <td>
+						    <span>*</span>用户姓名: <input type="text" name="user_name" class="input">
+						    <input type="hidden" name="uid">
+						  </td>
+						</tr>
+
+						<tr>
+						  <td>
+						    性别：
+							<input type="radio" value="1" name="gender">男
+							<input type="radio" value="0" name="gender">女
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+						    <span>*</span>手机号码: <input type="text" name="phone" class="input">
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+						    <span>*</span>用户邮箱: <input type="text" name="email" class="input">
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+						    <span>*</span>身份证号: <input type="text" name="user_card" class="input">
+						  </td>
+						</tr>
+						
+						<tr>
+						  <td>
+						    <input type="submit" value="确定" class="submit button">
+							<input type="button" value="取消" class="button close">
+						  </td>
+				        </tr>
+						
+					   </table>
+				   </form>
+				   </div>
+				</div>
+			
+				<!-- 点击新增游客收货信息 显示的页面 -->
+				<div class="add" id="display2">
+				  <div>
+				    <ul class="container">
+					  <li>新增收货地址</li>
+					  <li id="hidden2" class="close"><img src="img/07-个人资料首页_44.jpg"></li>
+					</ul>
+				  </div>
+				  
+				  <div class="form">
+				  <form action="data/add_address.php" method="post">
+					  <table>
+						<tr>
+						  <td>
+						    <span>*</span>收货人姓名: <input type="text" name="user_name" class="input">
+						    <input type="hidden" name="uid">
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+						    <span>*</span>联系手机: <input type="text" name="phone" class="input">
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+						    <span>*</span>收货地址: <input type="text" name="address" class="input">
+						  </td>
+						</tr>
+						<tr>
+						  <td>
+						    <input type="submit" value="确定" class="submit button">
+							<input type="button" value="取消" class="button close">
+						  </td>
+				        </tr>
+						
+					   </table>
+				   </form>
+				   </div>
+				</div>	
+			</div>
+        </div>
+   </div> 
+
+   
+
+   <script src="js/jquery-1.11.3.js"></script>
+   <script src="js/header.js"></script>
+   <script src="js/accordion.js"></script>
+   <script src="js/userList.js"></script>
+   <script src="js/address.js"></script>
+   <script>
+
+
+   </script>
+ </body>
+</html>

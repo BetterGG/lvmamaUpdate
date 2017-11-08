@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>产品详情</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/product-details.css"/>
+</head>
+<body>
+<!--header-->
+<div id="header"></div>
+    <div id="nav">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="outland.html">出境游</a></li>
+            <li><a href="inland.html">国内游</a></li>
+            <li><a href="hotel.html">酒店</a></li>
+        </ul>
+    </div>
+<div class="details_page">
+	<!--detail页面主体-->
+    <div id="main" class="block">
+        <!--面包屑导航-->
+        <!-- <div class="crumbs-link" >
+            <a href="#">度假旅游</a> >
+            <a href="#">北京当地游</a> >
+            <a href="#">北京到鸟巢当地游</a>
+        </div> -->
+        <!--1、details-->
+        <div id="product-top" class="product-top clear">
+                <!--1.1、左部分 imgs and calendar-->
+            <div class="top-left ">
+                <div class="product_top_img clear ">
+                    <!--左上角当地游图片-->
+                    <div class="titleImg"></div>
+                    <div id="leftImg" class="leftImg">
+                            <!--<img class="imgShow" src="img/beijing/product-imgs/greatwall-bg1.jpg" alt=""/>-->
+                        <a id="rightArrow" class="sprite right-arrow"></a>
+                        <a id="leftArrow" class="sprite left-arrow"></a>
+                    </div>
+                    <!--product details imgs-->
+                    <div class="rightImg">
+                        <ul id="rightImg" class="smImgs">
+                            <!--<li>  <img class="smImgs-active" src="img/beijing/product-imgs/greatwall-sm1.jpg" alt=""/> </li>-->
+                        </ul>
+                        <a id="slipUp" class="slipUp imgPlace"></a>
+                        <a id="slipDown" class="slipDown imgPlace"></a>
+                    </div>
+                </div>
+                    <!--日历 calendar-->
+                <div class="calendar-area">
+                        <div class="calendar">
+                            <div class="cale_title">
+                                <a href="javascript:;" class="cale_pre">上月</a>
+                                <span class="smtitle">2017年9月</span>
+                                <a href="javascript:;" class="cale_next">下月</a>
+                            </div>
+                            <div class="calebox">
+                                <table border="1" cellspacing="0" >
+                                    <thead class="text-center">
+                                        <th>日</th>
+                                        <th>一</th>
+                                        <th>二</th>
+                                        <th>三</th>
+                                        <th>四</th>
+                                        <th>五</th>
+                                        <th>六</th>
+                                    </thead>
+                                    <tbody>
+                                        <!--<tr>-->
+                                            <!--<td>-->
+                                                    <!--<div class="caledate">-->
+                                                    <!--<li class="caleday">27</li>-->
+                                                    <!--<li class="caleinfo calhide">充足</li>-->
+                                                    <!--<li class="caleprice calhide">¥169起</li>-->
+                                                <!--</div>-->
+                                            <!--</td>-->
+                                        <!--</tr>-->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="calendar_bottom"><i></i>因最低价实时变化，请以实际价格为准</div>
+                        </div>
+                </div>
+            </div>
+
+            <!--1.2、右部分 信息-->
+            <div class="top-right clear">
+                <div id="product-title" class="top-right-title font2">
+                    <!--<span class="travel_start">北京出发</span>-->
+                    <!--<span>-->
+                        <!--|<b>【双重优惠中 地标之旅】八达岭长城、天坛、鸟巢水立方、什刹海纯玩1日游</b>&nbsp;-->
+                        <!--[赠送价值50元皮影戏]品质游、铁定发班，天坛公园通票、真纯玩-->
+                    <!--</span>-->
+                    <!--<li class="tips" title="高品质跟团游：严选放心精品，全程贴心服务，行程安心透明，食宿动心升级，预订省心无忧">开心驴行</li>-->
+                </div>
+                <div  class="details_info1">
+                    <span id="product-num"></span>
+                    <em class="number_left orange font1">97.3%</em>好评
+                    <span> | </span>
+                    <div id="collect" class="number_right font1">
+                        <em class="glyphicon glyphicon-star"></em>
+                        <span class="product_collect">收藏</span>
+                    </div>
+                </div>
+                <div class="details_info2">
+                    <span class="info_title">驴妈妈价:</span>
+                        <span class="orange font2">¥</span>
+                        <span id="product-price" class="product_price font3 orange"></span>
+                        <span class="priceMark_add"> 起/人(最少成团人数:8人)</span>
+                        <em class="glyphicon glyphicon-question-sign question-sign"></em>
+                        <span class="product_price_tips" title='1、本起价是按双人出行共用一间房核算的单人价格。&#10; 2、此价格是可选出发日期中，最低的班期价格。&#10; 3、产品最终价格会根据您所选择的出发日期、出行人数、入住酒店房型、&#10;航班或交通等以及所选附加服务的不同而有所差别。'>起价说明</span>
+                </div>
+                <div class="details_info">
+                    <span class="info_title">优惠:</span>
+                    <li class="tips" title="预订此产品，游玩后发表点评，内容通过审核，即可获得约2元奖金。&#10;最终返奖金额，以实际订单产生的奖金额为准。">点评返现</li>
+                    <li class="tips" title="从2014年12月08日起到2017年12月31日发表订单游记，审核通过即返20.00元，&#10;精华游记即返100.00元。更多精彩活动请查看游记频道。">游记返现</li>
+                </div>
+                <div class="details_info">
+                    <span class="info_title">促销:</span>
+                    <span  class="product-sale p-shadow">每满500减10元（下单支付可享）</span>
+                </div>
+                <div class="details_info">
+                    <span class="info_title">领红包:</span>
+                    <p class="p-shadow">
+                        <span class="red-box"></span><span>每满2000元减35元</span>
+                        <span class="red-box"></span><span>每满800元减20元</span>
+                    </p>
+                </div>
+                <div class="details_info">
+                    <span class="info_title">包含项目:</span> <span>门票、餐费、导游、其他</span>
+                </div>
+                <div class="details_info">
+                    <span class="info_title">线路概况:</span> <p class="recod-line"><span class="orange">D1</span><span id="product-line"></span>     </p>
+                </div>
+                <div class="details_recom clear">
+                    <i class="recom-left"></i>
+                    <i class="recom-right"></i>
+                    <img class="recom-img" src="img/beijing/product-imgs/icon_lv.jpg"/>
+                    <ul class="recom-content font1">
+                        <li class="recom-title">产品经理推荐</li>
+                        <li><span class="orange font2">★</span>旅游景点精选</li>
+                        <li><span class="orange font2">★</span>名族的象征</li>
+                    </ul>
+                </div>
+                <div class="top_right_bottom">
+                    <p class="bottom_title">
+                        开心驴行信用保障：
+                        <a class="learn_more" href="#">了解更多</a>
+                    </p>
+                    <ul class="bottom-content">
+                        <li class="glyphicon glyphicon-ok-circle orange"></li> VIP管家
+                        <li  class="glyphicon glyphicon-ok-circle orange"></li> 金牌导游
+                        <li class="glyphicon glyphicon-ok-circle orange"></li> 食宿升级
+                        <li class="glyphicon glyphicon-ok-circle orange"></li> 成团保障
+                        <li class="glyphicon glyphicon-ok-circle orange"></li> 口碑之选
+                    </ul>
+                </div>
+                <em class="sprite sprite-left"></em>
+            </div>
+        </div>
+
+            <!--products-form-->
+        <div class="product_form clear">
+            <form action="#" >
+                <div class="select-groups">
+                    <span>出行日期：</span>
+                    <select class="select-date" name="travel-date" id="form-date">
+<!--                         <option value="0">请选择出行时间</option> -->
+<!--                         <option value="11">11号当日价格</option> -->
+<!--                         <option value="12">12号当日价格</option> -->
+<!--                         <option value="13">13号当日价格</option> -->
+<!--                         <option value="14">14号当日价格</option> -->
+<!--                         <option value="15">15号当日价格</option> -->
+                    </select>
+                    <span>成人：</span>
+                    <select class="select-person" name="adult" id="adult">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span>儿童：</span>
+                    <select class="select-person" name="child" id="child">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span title='1）2周岁-12周岁（不含）按儿童提交，含车位，导游服务费，中餐；不含门票。&#10; 2）2周岁（含）以下儿童不提供座位无需提交订单。'>儿童标准价</span>
+                </div>
+                <div class="form-total">
+                    <span class="glyphicon glyphicon-question-sign gly-bgcolor"></span>
+                    <a class="pre-order" href="#">如何预定</a>
+                    <span> 总价：</span>
+                    <span class="font2"><b>￥</b></span>
+                    <span class="product-total orange font3"><b>322</b></span>
+                    <a href="JavaScript:;" class="bgc_orange book font2">开始预定</a>
+                </div>
+            </form>
+        </div>
+        <!--nav bar-->
+        <!--main-part-->
+        <div class="main-part">
+            <div id="nav_bar" class="page_nav clear">
+                <a class="nav-active" href="#product-details">产品详情</a>
+                <a href="#journey">行程介绍</a>
+                <a href="#book-notes">预订须知</a>
+                <a href="#recommend">线路推荐</a>
+                <a href="#comments">驴友点评 <span class="orange">(0)</span></a>
+            </div>
+            <div id="product-details" class="product-details intro">
+               <div class="font2 details-title"><em class="sprite sprite-intro intro-position1"></em> 产品详情</div>
+                <div id="bgImgs-top">
+                    <!--<img src="img/beijing/product-imgs/details-bg1.jpg" alt=""/>-->
+                </div>
+                <h4>产品概要</h4>
+                <ul class="details-intro">
+                    <li><i class="introduce-icon1"></i> 住宿详见行程介绍 </li>
+                    <li><i class="introduce-icon2"></i> 含3个景点 </li>
+                    <li><i class="introduce-icon3"></i> 含巴士 </li>
+                    <li><i class="introduce-icon4"></i> 用餐详见行程介绍 </li>
+                    <li><i class="introduce-icon5"></i> 推荐项目详见行程介绍 </li>
+                    <li><i class="introduce-icon6"></i> 含自由活动1次 </li>
+                </ul>
+                <h4>一眼看懂行程</h4>
+                <div id="bgImgs" class="details-imgs">
+                    <!--<img src="img/beijing/product-imgs/details-bg2.jpg" alt=""/>-->
+                </div>
+            </div>
+            <div id="journey" class="journey intro">
+                <div class="font2 details-title"><em class="sprite sprite-intro intro-position2"></em> 行程介绍</div>
+                <p class="journey-A">A行程 <em class="sprite journey-icon"></em></p>
+                <ul class="journey-content">
+                    <!--<li>行程天数：</li><li>1天</li>-->
+                    <!--<li>行程特色：</li><li>天坛，北京的标志；长城，民族的象征。</li>-->
+                    <!--<li>线路概况：</li><li>【第1天】 自由活动> 天坛公园> 八达岭长城> 鸟巢（或）水立方 </li>-->
+                </ul>
+            </div>
+            <div id="book-notes" class="book-notes intro">
+                <div class="font2 details-title"><em class="sprite sprite-intro intro-position3"></em> 预定须知</div>
+                <p class="orange font1">本产品委托社为北京金水桥国际旅行社有限公司（门票），具体的旅游服务和操作由委托社提供。</p>
+                <h5><b>出行警示及说明</b></h5>
+                <ul class="notes-content">
+                    <li>根据国家法律规定，为确保您的游程顺利，请随身携带并自行保管好您的有效身份证明（12岁以下儿童携带户口簿原件或者护照）。</li>
+                    <li>
+                        此旅游产品为团队游，未经随团领队同意，游客在游览过程中不允许离团（行程中自由活动除外），不便之处敬请谅解。游客个人或结伴未经领队或导游同意私自外出所发生一切意外事故或事件引起的任何责任与后果，均由游客自负，与旅行社无关。
+                    </li>
+                    <li>
+                        为了不耽误您的行程，请您严格按照《出团通知书》要求，在航班起飞前规定时间到达机场集合并办理登机和出入境相关手续。出团通知书会在出发前1天给到客人。
+                    </li>
+                    <li>
+                        按国家规定，可以不占座位的儿童的标准为0.8米以下怀抱婴儿，0.8米以上儿童必须占座，否则，我社导游可依据《新交通法规》的有规定，为了保证车上其他游客的正常行程及生命安全，有权拒绝儿童参加本次旅游活动，由此产生的一切后果和损失由游客自负。
+                    </li>
+                    <li>
+                        旅游者如系岁以上（含岁）人员出游的，本人需充分考虑自身健康状况能够完成本次旅游活动，谨慎出游，建议要有亲友陪同出游，如因旅游者自身身体原因引发疾病或其他损害由旅游者本人承担相关责任。未满18周岁的旅游者请由家属陪同参团。岁）人员出游的，本人需充分考虑自身健康状况能够完成本次旅游活动，谨慎出游，建议要有亲友陪同出游，如因旅游者自身身体原因引发疾病或其他损害由旅游者本人承担相关责任。未满18周岁的旅游者请由家属陪同参团。
+                    </li>
+                    <li>
+                        单房差：报价是按照2人入住1间房计算的价格，如出现单男或单女情况，本公司将于出发前通知是否可以拼房或加床并支付附加费，如未能拼房，就需支付单人房附加费，享用单人房间。
+                    </li>
+                    <li>若本旅游产品未达到最低成团人数，我司将在游客报名参加本旅游产品时约定的出发日前</li>
+                    <li>
+                        旅游线路产品，已将相关景点进行优惠打包，因此不可重复享受优惠（如特殊证件、优惠门票等），特别情况下涉及退费也仅退回优惠后的门票费用；任何费用一律不现退，统一在回程后，由驴妈妈旅游网退还至游客的驴妈妈账户！
+                    </li>
+                    <li>为确保游客的游程顺利，当日游程的前后顺序可能需要依据当时情况统一调整；行程内车程及游览时间仅供参考，以实际情况为准！如遇路况原因等突发情况需要变更各集合时间的，以导游员届时公布为准。</li>
+                    <li>游客须知：</li>
+                    <li>
+                        1）若旅游行程内含有购物店，旅游者有权选择是否参加，如旅游者不愿参加，可选择预订其他旅游产品线路。旅游行程中的自由活动期间内，旅行社将会视旅游者需求及实际情况推荐部分自费项目，如旅游者自愿参加，应与旅行社另行签署书面协议，并不得影响同团其他客人在此期间的活动安排。
+                    </li>
+                    <li>
+                        2）旅行过程中须经过景区、博物馆等衍生设置的购物店，请您特别注意商品的价格合理性及品质，谨慎选择。在付款前务必仔细检查，确保商品完好无损、配件齐全并具备相应的鉴定证书，明确了解商品售后服务流程；购买后妥善保管相关票据。
+                    </li>
+                </ul>
+                <h5><b>费用包含</b></h5>
+                <ul class="notes-content">
+                    <li>1、门票：外景门票</li>
+                    <li>2、导游：当地中文导游</li>
+                    <li>3、用车：往返旅游用车</li>
+                    <li>4、赠送皮影自出行之日起7天内有效（赠送项目，自愿放弃，费用不退）</li>
+                    <li>5、保险：旅行社责任险</li>
+                    <li>6、儿童价标准：1.2米以下儿童，含车位费和导游服务费，儿童不论大小，均需占座，请按实际人数下单</li>
+                </ul>
+                <h5><b>费用不包含</b></h5>
+                <ul class="notes-content">
+                    <li>1、缆车或滑车 （完全自愿自理）</li>
+                    <li>2、个人旅游人身意外险</li>
+                    <li>3、其它私人消费</li>
+                    <li>4、中餐：（餐标30元/人）</li>
+                </ul>
+            </div>
+            <div id="recommend" class="recommend intro">
+                <div class="font2 details-title"><em class="sprite sprite-intro intro-position4"></em> <span class="recom-active">线路推荐</span> </div>
+                <p>出发地：<span class="from">北京</span>目的地：<span class="destination bgc_orange"></span></p>
+                <div class="recommend-content">
+                    <!--<div class="content-block">-->
+                        <!--<img src="img/beijing/product-imgs/gugong.jpg" alt=""/>-->
+                        <!--<a class="recommend-content-title" href="#">故宫博物院、珍宝馆、钟表馆半日游(深度讲解故宫、彻底了解皇城)</a>-->
+                        <!--<p class="good">好评率：<span class="good-num orange ">96.4%</span></p>-->
+                        <!--<p class="product-price"><span class="orange price-show">￥98 </span> 起/人</p>-->
+                        <!--<div class="content-text ">-->
+                            <!--<p>行程天数：1天0晚 <br/>出发地：北京 <br/>目的地：北京，故宫博物院</p>-->
+                        <!--</div>-->
+                    <!--</div>        *   8  -->
+                </div>
+            </div>
+
+            <div id="comments" class="comments intro">
+                <div class="font2 details-title">
+                    <em class="sprite sprite-intro intro-position5"></em>
+                    <span class="recom-active">驴友点评</span>
+                </div>
+                <div class="comments-title clear">
+                    <div class="title-left">
+                        <p class="font3 orange">97.5%</p>
+                        <p>好评率</p>
+                        <p>来自 <span class="orange">0</span>位旅客的真实点评</p>
+                    </div>
+                    <div class="title-right">
+                        <p>景点(4.8) <progress value="4.8" max="5"></progress></p>
+                        <p>酒店(4.8) <progress value="4.8" max="5"></progress></p>
+                        <p>服务(4.8) <progress value="4.8" max="5"></progress></p>
+                        <p>交通(4.8) <progress value="4.8" max="5"></progress></p>
+                    </div>
+                </div>
+                <div class="comments-content">
+                    <ul class="content-title">
+                        <li>全部点评(0)</li>
+                    </ul>
+                    <div class="custom-comments clear" id="comment-content">
+						<img src="imgs/comment.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="footer">footer部分</div>
+
+</div>
+    <script src="js/tools.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/06-product-details.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>起航-登录</title>
+	<link rel="stylesheet" href="css/base.css">
+	<style>
+		.main1{height:100px;margin:auto;padding:0;list-style:none}
+		.logo{width:1000px;height:100px;margin:auto;}
+		.logo .page{margin:12px  0;float:left;}
+		.logo>.d1{height:40px;width:1px;background:gray;float:left;margin:34px 0 0 0;}
+		.logo>.c1{font-size:25px;float:left;margin:36px 5px 0 0;}
+		.logo>.d2{float:right;width:200px;height:60px;margin:20px 5px 0 0;font-size:14px;}
+		.d2>.p1{font-weight:bold;float:right;margin:6px 15px 0 0;}
+		.d2>.p2{font-size:22px;color:red;}
+		.d2>.p1>.c2{color:gray;font-size:12px;font-weight:normal;}
+		.d2>.p2>.c2{color:gray;font-size:12px;font-weight:normal;margin:0 0 0 10px;}
+
+		.main{position:relative;top:-40px;}
+		.main>.d3{position:absolute;top:80px;right:80px;width:350px;height:390px;background:#fff;float:right;text-align:center;}
+		.d4{padding-bottom:10px;}
+		.d4 h1{ color: #666;font-family: inherit;font-weight: 500;line-height: 1.1; margin-top:10px; }
+		.d5>.c5{height:35px;width:310px;margin:10px 0 10px -32px;font-size:16px;box-sizing: border-box;padding-left:40px;}
+		.d5>img{position:relative;top:-16px;left:7px;}
+		.d5>input{border: 1px solid #ccc;}
+		.d6{height:35px;}
+		.d6>.left{float:left;margin:5px 18px;}
+		.d6>.right{float:right;margin:7px 20px;}
+		.d3 a{color:#f38;}
+		.d3 a:hover{color:#f38;text-decoration: underline;}
+		.d7>button{width:310px;height:45px;font-size:21px;color:#fff;background:#ff4a4a;border:none;}
+		.d7>button:hover{cursor:pointer;background:#ff3366;}
+		.d8>p{font-size:15px;margin:5px 0 ;}
+		.d9>p{position:relative;font-size:15px;font-weight:bold;top:5px;left:-95px;}
+		.d9>hr{width:165px;position:relative;top:-10px;left:65px;}
+		.d10>a img{float:left;margin:15px 0 0 15px;}
+		#back{width:1330px;height:490px;position:relative;top:0px;background:url('img/111.jpg') -300px 0;margin:auto;
+		z-index:-1;}
+	</style>
+	<script src='js/jquery.js'></script>
+</head>
+<body>
+		<div class="main1">
+		<div class="logo">
+			<a href="index.html"><img src="img/1.png" alt="" class="page"></a>
+			<div class="d1"></div>
+			<span class="c1">登录中心</span>
+			<div class="d2">
+				<img src="img/2.png" alt="" width=65px height=30px>
+				<p class="p1">服务热线 <span class="c2">(全年无休)</span></p>
+				<p class="p2">1010-6060 <span class="c2">(免长话费)</span></p>
+				
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="main">
+		<div class="d3">
+			             
+			<div class="d4"><h1>用户登录</h1></div>
+			<div class="d5">
+			<img src="img/4.png" alt="">
+			<input type="text" placeholder="邮箱/手机号/用户名" class="c5" id='uname'><br>
+			<img src="img/5.png" alt="">
+			<input type="password" placeholder="请输入密码" class="c5" id='upwd'><br>
+			</div>
+			<div class="d6">
+				<p class="left"><input type="checkbox">记住密码</p><p class="right"><a href="#">忘记密码?</a></p>
+			</div>
+			<div class="d7">
+				<button id='btn'>登录</button>
+			</div>
+			
+			<div class="d8">
+			<p>还不是驴妈妈会员?<span><a href="register.html"> 免费注册,送180元新手礼包</a></span></p>
+			</div>
+			<div class="d9">
+			<p>合作网站账号登录</p>
+			<hr>
+			</div>
+			<div class="d10">
+				<a href="3"><img src="img/1-1.png" alt=""></a>
+				<a href="3"><img src="img/1-2.png" alt=""></a>
+				<a href="3"><img src="img/1-3.png" alt=""></a>
+				<a href="3"><img src="img/1-4.png" alt=""></a>
+			</div>
+		</div>
+	</div>
+	<div id="back"></div>
+	<script>
+		
+		$("#btn").click(function(e){
+			e.preventDefault();
+		var n = $("#uname").val();
+		var p= $("#upwd").val();
+		$.ajax({
+        type:"GET",
+        url:"data/login_do.php",
+		data:{uname:n,upwd:p},
+        success:function(data){
+			if(data.code==-1){
+				alert('用户名或密码不正确');
+				$("#uname").val('');
+				$("#upwd").val('');
+			}else{				
+				document.cookie="uid="+data.uid;
+				document.cookie="uname="+$("#uname").val();
+				location.href = "index.html";
+ 			}
+
+        },
+        error:function(data){
+            alert("您的网络出现故障，请检查");
+        }
+    });
+});
+
+	</script>	
+</body>
+</html>

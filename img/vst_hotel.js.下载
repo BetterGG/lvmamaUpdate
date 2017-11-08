@@ -1,0 +1,289 @@
+
+var weekData = 
+{
+		1:"星期一",
+		2:"星期二",
+		3:"星期三",
+		4:"星期四",
+		5:"星期五",
+		6:"星期六",
+		0:"星期天"
+}
+
+//点击价格筛选
+var searchByPrice = function(url,filterStr,endWith) 
+{
+	var downPrice = $("#downPrice").val();
+	var upPrice = $("#upPrice").val();
+	url = $.trim(url);
+	filterStr = filterStr?filterStr.replace(/([ESM][0-9.]*,{0,1}[0-9.]*)/g,""):filterStr;
+	if (downPrice && upPrice) 
+	{
+		if(!/^[1-9]\d*(\.\d{1,2})?$|^[0]\.\d{1,2}$/.test(downPrice)){
+			alert("最低价或最高价不能为非数字且最多只能输入两位小数");
+			return;
+		}
+		if(!/^[1-9]\d*(\.\d{1,2})?$|^[0]\.\d{1,2}$/.test(upPrice)){
+			alert("最低价或最高价不能为非数字且最多只能输入两位小数");
+			return;
+		}
+		if (isNaN(downPrice) || isNaN(upPrice)) 
+		{
+			alert("最低价或最高价不能为非数字");
+			return;
+		}
+		
+		if(parseFloat(upPrice) <= parseFloat(downPrice))
+		{
+			alert("最低价不能大于等于最高价");
+			return;
+		}
+	}
+
+	if (downPrice && isNaN(downPrice)) {
+		alert("最低价或最高价不能为非数字");
+		return;
+	}
+
+	if (upPrice && isNaN(upPrice)) 
+	{
+		alert("最低价或最高价不能为非数字");
+		return;
+	}
+	
+	if (!upPrice && !upPrice) 
+	{
+		alert("价格不能为空!");
+		return;
+	}
+	
+	
+	if(filterStr)
+	{
+		url = url + "E"+downPrice + ","+upPrice+endWith;
+	}
+	else
+	{
+		url = url + "E"+downPrice + ","+upPrice + endWith;
+	}
+	window.location.href = encodeURI(url + "#list");
+}
+
+//清除填写的价格
+var clear = function()
+{
+	$("#downPrice,#upPrice").val("");
+}
+
+function NewDate(str) { 
+	str = str.split('-'); 
+	var date = new Date(); 
+	date.setUTCFullYear(str[0], str[1] - 1, str[2]); 
+	date.setUTCHours(0, 0, 0, 0); 
+	return date; 
+	} 
+
+$(function(){
+	/*酒店房型价格，指上去弹出时间价格表*/ 
+	var timer_price = null;
+	$('.date_price').hover(function(){ 
+		clearTimeout(timer_price);
+	},function(){
+		timer_price = setTimeout(function(){
+			$("#date_price li").remove();
+			$('#date_price').hide();
+		},200)
+	});
+	
+	$('.js_date_price').hover(function()
+	{ 
+		var prepared = $(this).data("isPrepared")
+		clearTimeout(timer_price);
+		$("#date_price li").remove();
+		$('#date_price').hide();
+		var btnL = $(this).offset().left, 
+		btnT = $(this).offset().top, 
+		showBox = $('#date_price'), 
+		showBox_L = btnL - showBox.outerWidth(true)/2 + $(this).outerWidth(true)/2, 
+		showBox_T = btnT + $(this).height()+8,
+		startDate=NewDate($("#startDate").val()),endDate=NewDate($("#endDate").val()); 
+		//如果只查询一天的记录,不需要显示时间价格表
+		if(startDate.getTime() + 1 * 24 * 60 * 60 * 1000 >= endDate.getTime())
+		{
+			return;
+		}
+		var liArr = [];
+		//循环遍历所有的时间价格表
+		$("span",this).each(function(index,object)
+		{
+			//生成当前节点存储的时间
+			var thisDate = NewDate($(object).attr("specDate"));
+			//生成当前节点的时间价格html
+			var li = "<li>";
+			li += "<div class='price_list_t'>";
+			li += "<p name='time'>"+$(object).attr("specDate")+"</p>";
+			li += "<p>"+weekData[thisDate.getDay()] +"</p>";
+			li += " </div>";
+			li += " <div class='price_list_b'>";
+			li += " <b><dfn>￥</dfn>"+$(object).attr("price")+"</b>";
+			if($(object).attr("breakfast") > 0)
+			{
+				li += "<p>有早餐</p>";
+			}
+			else
+			{
+				li += "<p>无早餐</p>";
+			}
+			li += "</div>";
+			li += "</li>";
+			//如果存储节点的数组长度大于0.要按照时间进行排序
+			if(liArr.length > 0)
+			{
+				for (var int = 0; int < liArr.length; int++) 
+				{
+					var date = NewDate($("p[name='time']",liArr[int]).text());
+					if(thisDate < date)
+					{
+						liArr.splice(int,0,li);
+						break;
+					}
+					else if(int == (liArr.length -1))
+					{
+						liArr.push(li);
+						break;
+					}
+				}
+			}
+			else
+			{
+				liArr.push(li);
+			}
+		});
+		while(startDate < endDate)
+		{
+			var addthisDate = false;
+			$(liArr).each(function(i,n)
+			{
+				var thisDate = NewDate($("p[name='time']",n).text());
+				if(startDate.getTime() == thisDate.getTime())
+				{
+					$("ul.price_list",showBox).append(n);
+					addthisDate = true;
+					return false;
+				}
+			});
+			if(!addthisDate)
+			{
+				var li = "<li>";
+				li += "<div class='price_list_t'>";
+				li += "<p name='time'>"+startDate.format("yyyy-MM-dd")+"</p>";
+				li += "<p>"+weekData[startDate.getDay()] +"</p>";
+				li += " </div>";
+				li += " <div class='price_list_b'>";
+				li += " <b>----</b>";
+				li += "</div>";
+				li += "</li>";
+				$("ul.price_list",showBox).append(li);
+			}
+			startDate.setTime(startDate.getTime() + 1 * 24 * 60 * 60 * 1000);
+		}
+		showBox.show().css({'left':showBox_L,'top':showBox_T}); 
+	},
+	function()
+	{
+		timer_price = setTimeout(function(){
+			$("#date_price li").remove();
+			$('#date_price').hide();
+		},200)
+	});
+	
+/**
+ * 删除浏览记录
+ */
+$("i[name='delHistoryCookie']").bind("click",function()
+{
+	var productId = $(this).parent().attr("id");
+	$.ajax({
+		type: "POST",
+		url: "http://hotels.lvmama.com/list/delHistoryCookie.do",
+		data: {
+			productId:productId
+		},
+		success: function(data)
+		{
+			$("#"+productId).remove();
+		}
+	});
+})
+})
+
+/**
+ * 选择隐藏的品牌跳转
+ */
+var jumpPage = function(url,endWith,filterStr)
+{
+	var bandArr = [];
+	$("li[name='brand'],dd[name='brand']").each(function(i,n)
+	{
+		if($(n).is(".active"))
+		{
+			bandArr.push([$(n).attr("id")]);
+		}
+	});
+	filterStr = filterStr?filterStr.replace(/([BSM][0-9,]*)/g,""):filterStr;
+	if(filterStr && bandArr.length > 0)
+	{
+		url = url + "B"+bandArr.join(",")+filterStr+endWith;
+	}
+	else if(bandArr.length > 0)
+	{
+		url = url + "B"+bandArr.join(",") + endWith;
+	}
+	else
+	{
+		alert("您未选择品牌!");
+		return;
+	}
+	window.location.href = encodeURI(url + "#list");
+}
+
+
+$('#js_keyword').keydown(function(e)
+{
+	if(e.keyCode==13)
+	{
+		$("#searchButton").click();
+	}
+});
+
+/**
+ * 搜索按钮跳转
+ */
+var search = function(url)
+{
+	var cityDistrictId = $("#js_keyword").attr("data-id");
+	var mdd = $("#js_mdd").val();
+	var keyword = $("#js_keyword").val();
+	if(!searchValidate() || !cityDistrictId || !mdd )
+	{
+		return;
+	}
+	var startDate = $("#startDate").val().replace(/-/g,"");
+	var endDate = $("#endDate").val().replace(/-/g,"");
+	url = url + "U"+cityDistrictId+"C"+startDate+"O"+endDate;
+	if( keyword && keyword !="(选填)酒店名称/商圈/地标")
+	{
+		url += "?keyword="+encodeURIComponent(keyword) +"&mdd="+encodeURIComponent(mdd);
+	}
+	else
+	{
+		url += "?mdd="+encodeURIComponent(mdd);
+	}
+	url += "#list";
+	var old_url = window.location.href;
+	if(old_url == url){
+		window.location.reload(true);
+	}else{
+		window.location.href = url ;
+	}
+}

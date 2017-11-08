@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>个人资料首页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/user.css">
+ 
+ </head>
+ <body>
+   <div class="main">
+		 <!-- 第一部分:顶部 -->
+		 <div class="db clear">
+		 <!-- 1,1左半部分 -->
+		    <div class="db-left">	   
+			 <span><img src="img/07-个人资料首页_03.jpg"> 上海[切换] 您好, lv157705226psw</span>
+			 <span><img src="img/07-个人资料首页_05.jpg">消息 [退出]</span>
+			 <span><img src="img/07-个人资料首页_07.jpg"></span>
+		    </div>
+		 <!-- 1,2右半部分 -->
+			<div class="db-right">
+			  <ul class="list clear">
+				<li><span class="span"></span></li>
+				<li><a href="#"><img src="img/07-个人资料首页_17.jpg"></a></li>
+				<li>|</li>
+				<li><a href="#"><img src="img/07-个人资料首页_15.jpg">手机版</a></li>
+				<li><a href="#"><img src="img/07-个人资料首页_13.jpg">+微博</a></li>
+				<li><a href="#"><img src="img/07-个人资料首页_11.jpg">小程序</a></li>
+				<li><a href="#"><img src="img/07-个人资料首页_09.jpg">微信</a></li>
+				<li>|</li>
+				<li><a href="#">帮助</a></li>
+				<li><a href="#">会员俱乐部</a></li>
+				<li><a href="#">积分商城</a></li>
+				<li><span class="span"></span></li>
+				<li><a href="#">我的驴妈妈</a></li>	
+			  </ul>	
+			</div>
+         </div>
+		<!-- 第二部分,logo -->
+		 <div class="logo clear">
+		   <!-- 2,1 logo左半部分 -->
+			<div class="logo-left">			  
+			      <a href="index.html"><img src="img/07-个人资料首页_28.jpg"></a>
+			 
+				  <ul class="logo-list clear">
+				   <li><a href="#">我的首页</a></li>
+				   <li><a href="#">账户设置</a></li>
+				   <li><a href="#">积分商城</a></li>
+				   <li><a href="#">会员俱乐部</a></li>
+				  </ul>			  
+			</div>
+		   <!-- 2,2 logo右半部分 -->
+		    <div class="logo-right">
+		      <a href="#">返回驴妈妈首页</a>
+		    </div>		
+		 </div>
+        
+		<!-- 第三部分主体 -->
+	    <div class="subject">
+		<!-- 3.1左半部分：下拉菜单 -->
+			<div class="accordion">
+			  <div class="title" data-triggle="accordion"><img src="img/07-个人资料首页_39.jpg">账户安全</div>
+			  <div class="content fade in">
+				<ul>
+				  <li><a href="#">安全设置</a></li>
+				  <li><a href="#">修改登录密码</a></li>
+				</ul>		  
+			  </div>
+
+			  <div class="title" data-triggle="accordion"><img src="img/07-个人资料首页_40.jpg">常用信息</div>
+			  <div class="content fade">
+				<ul id="change">
+				  <li>常用旅客信息</li>
+				  <li>常用收货信息</li>
+				</ul>		  
+			  </div>
+
+			  <div class="title" data-triggle="accordion"><img src="img/07-个人资料首页_41.jpg">个人资料</div>
+			  <div class="content fade">
+				<ul>
+				  <li><a href="#">个人信息</a></li>
+				  <li><a href="#">自驾货信息</a></li>
+				  <li><a href="#">头像设置</a></li>
+				</ul>		  
+			  </div>
+
+			</div>
+        <!-- 3.2中间部分 -->
+		    <!-- 常用游客信息  -->
+			<div id="msg1" class="midel fade show">
+              <!-- 3.2.1上半部分 -->
+			  <div class="midel-top">
+			    <ul>
+				  <li>常用游客信息</li>
+				  <li>
+				    <img src="img/07-个人资料首页_42.jpg">
+					<span id="add1">新增常用游客</span>
+				  </li>
+				</ul>
+			  </div>
+
+			  <!-- 3.2.2动态生成表格 --><u></u>
+			  <table class="table">
+			    <thead>
+				 <tr>
+				  <td>用户编号</td>
+				  <td>用户姓名</td>
+				  <td>用户密码</td>
+				  <td>邮箱</td>
+				  <td>电话</td>
+				  <td>真实姓名</td>
+				  <td>身份证号码</td>
+				  <td>性别</td>
+				  <td>操作</td>			  
+				 </tr>
+				</thead>
+				<tbody id="tb1">
+				  <tr>
+					<td colspan="8">
+					  
+					</td>
+			      </tr>
+                </tbody>			  
+			  </table>
+              
+			  <!-- 3.2.3分页按钮 -->
+			  <div class="pagination">
+                 <ul>
+                  <li><a href="#">上一页</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">下一页</a></li>              
+                 </ul>
+              </div>
+			</div> 
+			
+			<!-- 常用收货信息 -->
+			<div id="msg2" class="midel fade">
+              <!-- 3.2.1上半部分 -->
+			  <div class="midel-top">
+			    <ul>
+				  <li>常用收货信息</li>
+				  <li>
+				    <img src="img/07-个人资料首页_42.jpg">
+					<span id="add2">新增游客收货信息</span>
+				  </li>
+				</ul>
+			  </div>
+
+			  <!-- 3.2.2动态生成表格 --><u></u>
+			  <table class="table">
+			    <thead>
+				 <tr>
+				  <td>用户编号</td>
+				  <td>用户姓名</td>
+				  <td>用户密码</td>
+				  <td>邮箱</td>
+				  <td>电话</td>
+				  <td>真实姓名</td>
+				  <td>收货地址</td>
+				  <td>性别</td>
+				  <td>操作</td>			  
+				 </tr>
+				</thead>
+				<tbody id="tb2">
+				  <tr>
+					<td colspan="8">
+					  
+					</td>
+			      </tr>
+                </tbody>			  
+			  </table>             
+			  <!-- 3.2.3分页按钮 -->
+			  <div class="pagination">
+                 <ul>
+                  <li><a href="#">上一页</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">下一页</a></li>              
+                 </ul>
+              </div>
+            </div>
+
+			<!-- 点击新增常用游客 显示的页面 -->
+            <div class="add" id="display1">
+			  <div>
+			    <ul class="container">
+				  <li>新增常用游客</li>
+				  <li id="hidden1"><img src="img/07-个人资料首页_44.jpg"></li>
+				</ul>
+			  </div>
+			  
+			  <div class="form">
+			  <form action="data/register_user.php" method="post">
+				  <table>
+					<tr>
+					  <td>
+					    <span>*</span>用户姓名: <input type="text" name="user_name" class="input">
+					  </td>
+					</tr>
+
+					<tr>
+					  <td>
+					    性别：
+						<input type="radio" value="0" name="gender">男
+						<input type="radio" value="1" name="gender">女
+					  </td>
+					</tr>
+					<tr>
+					  <td>
+					    <span>*</span>手机号码: <input type="text" name="phone" class="input">
+					  </td>
+					</tr>
+					<tr>
+					  <td>
+					    <span>*</span>用户邮箱: <input type="text" name="email" class="input">
+					  </td>
+					</tr>
+					<tr>
+					  <td>
+					    <span>*</span>身份证号: <input type="text" name="user_card" class="input">
+					  </td>
+					</tr>
+					
+					<tr>
+					  <td>
+					    <input type="submit" value="确定" class="submit button">
+						<input type="button" value="取消" class="button">
+					  </td>
+			        </tr>
+					
+				   </table>
+			   </form>
+			   </div>
+			</div>
+			
+			<!-- 点击新增游客收货信息 显示的页面 -->
+			<div class="add" id="display2">
+			  <div>
+			    <ul class="container">
+				  <li>新增收货地址</li>
+				  <li id="hidden2"><img src="img/07-个人资料首页_44.jpg"></li>
+				</ul>
+			  </div>
+			  
+			  <div class="form">
+			  <form action="data/register_address.php" method="post">
+				  <table>
+					<tr>
+					  <td>
+					    <span>*</span>用户姓名: <input type="text" name="user_name" class="input">
+					  </td>
+					</tr>
+					<tr>
+					  <td>
+					    <span>*</span>联系手机: <input type="text" name="phone" class="input">
+					  </td>
+					</tr>
+					<tr>
+					  <td>
+					    <span>*</span>收货地址: <input type="text" name="address" class="input">
+					  </td>
+					</tr>
+					<tr>
+					  <td>
+					    <input type="submit" value="确定" class="submit button">
+						<input type="button" value="取消" class="button">
+					  </td>
+			        </tr>
+					
+				   </table>
+			   </form>
+			   </div>
+			</div>		
+        </div>
+   </div> 
+
+   <script src="js/jquery-1.11.3.js"></script>
+   <script src="js/accordion.js"></script>
+   <script src="js/userList.js"></script>
+   <script src="js/address.js"></script>
+   
+   <script>
+    $("#add1").click(function(){
+	  $("#display1").show();
+	});
+    $("#hidden1").click(function(){
+	  $("#display1").hide();
+	});
+    $("#add2").click(function(){
+	  $("#display2").show();
+	});
+    $("#hidden2").click(function(){
+	  $("#display2").hide();
+	});
+
+   </script>
+ </body>
+</html>

@@ -1,0 +1,572 @@
+#banner{
+    width: 1330px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#banner .carousel{
+    width: 100%;
+    height: 400px;
+    font-size: 0;
+}
+#banner .carousel>li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s linear;
+}
+#banner .carousel>li.show{
+    opacity: 1;
+    display: block;
+}
+
+
+#banner .carousel img{
+    width: 1313px;
+    height: 400px;
+}
+#banner .carousel_dot{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+#banner .carousel_dot li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+    background: rgba(200,200,200,0.5);
+}
+#banner .carousel_dot li:hover,
+#banner .carousel_dot li.active{
+    background: #ef3388;
+}
+#banner .search{
+    width: 562px;
+    height: 360px;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    background: white;
+}
+#banner .search_list{
+    width: 80px;
+    height: 360px;
+}
+#banner .search_list li{
+    width: 80px;
+    height: 44px;
+    border-bottom: 1px solid #4d6072;
+    background: #5b7485;
+    text-align: center;
+    font-size: 13px;
+    color:white;
+    line-height:45px;
+    cursor: pointer;
+}
+#banner .search_list li.active{
+    width: 77px;
+    height: 45px;
+    border-bottom: none;
+    border-left: 3px solid #ef3388;
+    background: white;
+    color: #ef3388;
+}
+#banner .search_list li:not(.active):hover{
+    background: #455769;
+}
+#banner .search_details{
+    width: 442px;
+    height: 330px;
+    padding: 15px 20px;
+    display: none;
+}
+
+#banner .search_details.show{
+    display: block;
+}
+
+#banner .search_details .search_title{
+    border-bottom: 1px solid #dddddd;
+}
+
+#banner .search_details .search_title li{
+    width: 88px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 17px;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+#banner .search_details .search_title li.active{
+    width: 88px;
+    height: 42px;
+    border-bottom: 2px solid #ef3388;
+    color: #ef3388;
+}
+#banner .search_details_box input{
+    width: 430px;
+    height: 34px;
+    border: 1px solid #cccccc;
+    padding-left: 9px;
+    margin-top: 20px;
+}
+#banner .search_details_box p{
+    overflow: hidden;
+    margin: 15px 0 20px;
+}
+#banner .search_details_box .search_btn{
+    width: 87px;
+    height: 36px;
+    background: #ef3388;
+    border-radius: 3px;
+    color: white;
+    float:right;
+}
+#banner .search_hot_list{
+    width: 318px;
+    height: 38px;
+    padding-left: 10px;
+}
+#banner .search_hot_list li{
+    float:left;
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#banner .search_hot_list li:last-child{
+    border-right: none;
+}
+#banner .search_ad img{
+    margin-top: 50px;
+    width: 440px;
+    height: 65px;
+}
+#elevator{
+    position: fixed;
+    left: 15px;
+    top: 100px;
+    display: none;
+}
+#elevator li{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #ccc;
+}
+#elevator li.active{
+    background-color: #08AFB1;
+    color: #fff;
+}
+#elevator li:not(.active):hover{
+    background-color: #6BFADA;
+    color: #fff;
+}
+#main{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+#main>div{
+    margin-top:30px;
+}
+
+#main .category{
+    height: 313px;
+    position: relative;
+}
+#main .category .choose{
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+#main .category .choose li{
+    width: 100px;
+    height: 40px;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    float:left;
+    cursor: pointer;
+}
+#main .category .choose li:hover,
+#main .category .choose li.active{
+    height: 39px;
+    border-bottom: 2px solid #ef3388;
+}
+#main .category .options{
+    width: 1190px;
+    height: 280px;
+    justify-content: space-between;
+    align-items: flex-end;
+    opacity: 0;
+    display: none;
+    transition: all .3s linear;
+    position: absolute;
+    left: 0;
+    top: 41px;
+}
+#main .category .options.show{
+    opacity: 1;
+    display: flex;
+}
+#main .category .options .option{
+    height: 258px;
+    border: 1px solid #ddd;
+}
+#main .category .options .option img{
+    width: 220px;
+    height: 150px;
+}
+#main .category .options .option p{
+    width: 200px;
+    padding: 10px;
+    font-size: 13px;
+}
+#main .category .options .option_title{
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+}
+#main .category .options .option_buy{
+    position: relative;
+    height: 57px;
+    color: #999999;
+}
+#main .category .options .option_buy a:hover{
+    text-decoration: none;
+}
+    /*公共option */
+#main .options{
+    display: none;
+}
+
+
+#main .options .option{
+    width: 218px;
+    height: 200px;
+    position: relative;
+    transition: transform .3s linear;
+    outline: #ccc solid 0;
+    cursor: pointer;
+}
+#main .option:hover{
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
+    transform: translate(0, -5px)
+}
+#main .options .option img{
+    width: 218px;
+    height: 145px;
+}
+#main .options .option p{
+    width: 208px;
+    padding: 3px 5px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#main .options .option_title span{
+    color: #339900;
+    padding-right: 3px;
+    border-right: 1px solid #ccc;
+}
+#main .options .price{
+    font-size: 18px;
+    color: #ff6600;
+    font-weight: bold;
+}
+#main .options a{
+    display: inline-block;
+    width: 75px;
+    height: 35px;
+    border-radius: 1px;
+    color: white;
+    background: #ff8800;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+}
+#main .options .prev{
+    color: #999;
+    text-decoration: line-through;
+    font-size:10px;
+}
+#main .options .comment{
+    font-size: 13px;
+    color: #999;
+    position: absolute;
+    right: 5px;
+    bottom: 3px;
+}
+
+#main .sales{
+    height: 504px;
+    position: relative;
+}
+
+/*暑期大促*/
+#main .sales .sales_list{
+    margin-left: 165px;
+}
+#main .sales .sales_list li{
+    font-size: 13px;
+    color: #666;
+    width: 62px;
+    text-align: center;
+    float: left;
+    margin-right: 15px;
+    line-height: 30px;
+}
+#main .sales .sales_list li.active,
+#main .sales .sales_list li:hover{
+    color: #00bcff;
+}
+#main .sales .sales_ad{
+    width: 1190px;
+    height: 472px;
+    background: url(../img/sales.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#main .sales .sales_ad_list{
+    padding:0 20px;
+    position: absolute;
+    bottom: 20px;
+}
+#main .sales .sales_ad_list li{
+    width: 184px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 18px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    background: #fcc900;
+}
+#main .sales .options{
+    width: 903px;
+    height: 420px;
+    padding: 10px 15px;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+    left: 242px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#main .sales .options.show{
+    display: flex;
+}
+#main .section{
+    height:519px;
+    position: relative;
+}
+#main .section .section_list{
+    margin-left: 242px;
+}
+#main .section .section_list li{
+    float:left;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+}
+#main .section .section_list li.active,
+#main .section .section_list li:hover{
+    color: #ed3387;
+    border-bottom: 2px solid #ed3387;
+}
+#main .section>.ad,
+#main .section>.options{
+    float: left;
+}
+
+#main .section_strategy{
+    height: 380px;
+}
+
+#main .section>.ad{
+    width: 222px;
+    height: 483px;
+}
+#main .section>.ad .hot{
+    width: 100%;
+    height: 209px;
+    padding: 25px 8px 20px 20px;
+    margin-bottom: 2px;
+    background: #f5f5f5;
+    box-sizing: border-box;
+}
+#main .section>.ad ul{
+    overflow: hidden;
+    margin-left :-7px;
+}
+#main .section>.ad ul li{
+    float: left;
+    margin: 21px 8px 0 -1px;
+    padding: 0 0 0 8px;
+    border-left: 1px solid #ccc;
+}
+#main .section .ad .ad_box{
+    font-size: 17px;
+}
+#main .section .ad .ad_box h3{
+    color: #57a6db;
+}
+#main .section .ad .ad_box p{
+    color: #888;
+    margin: 7px 0;
+}
+#main .section .ad .ad_box button{
+    width: 83px;
+    height: 23px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #038ed6;
+    color: #038ed6;
+}
+#main .section>.options{
+    position: absolute;
+    left: 222px;
+    top: 37px;
+    width: 948px;
+    height: 463px;
+    padding:20px 0 0 20px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main .section>.options.show{
+    display: flex;
+}
+#main .section>.wallet {
+    width: 222px;
+    height: 345px;
+    float: left;
+    background: #f5f5f5;
+    position:relative;
+}
+#main .section>.wallet .news{
+    width: 156px;
+    height: 150px;
+    padding: 15px 11px;
+    border: 1px dotted #ccc;
+    background: white;
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+#main .section>.wallet .news p{
+    line-height: 24px;
+}
+#main .section>.wallet .news span{
+    color: #ff6600;
+}
+#main .section>.wallet a{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+#main .section>.options_strategy{
+    width: 928px;
+    height: 302px;
+    padding: 20px;
+    float: left;
+}
+#main .section>.options_strategy>div{
+    float: left;
+}
+#main .section>.options_strategy .area{
+    width: 420px;
+    height: 322px;
+    background: url(../img/ad4.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#main .section>.options_strategy .area p{
+    position: absolute;
+    bottom: 19px;
+    left: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+#main .section>.options_strategy .strategy{
+    width: 222px;
+    height: 322px;
+    margin: 0 24px 0 20px;
+}
+#main .section>.options_strategy .strategy img{
+    width: 75px;
+    height: 110px;
+    float: left;
+}
+#main .section>.options_strategy .strategy h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#main .section>.options_strategy .strategy .strategy_info{
+    float:left;
+    margin-left: 9px;
+}
+#main .section>.options_strategy .strategy .edition{
+    margin-bottom: 12px;
+}
+#main .section>.options_strategy .strategy .strategy_info p{
+    line-height: 20px;
+    color: #888;
+}
+#main .section>.options_strategy .ad{
+    width: 223px;
+    height: 322px;
+    background-color: #f5f5f5;
+}
+#main .section>.options_strategy .ad img{
+    width: 222px;
+    height: 94px;
+    margin-bottom:20px;
+    vertical-align: bottom;
+}
+#main .section>.options_strategy .notes dt{
+    margin: 30px 0 20px 0;
+    font-size: 18px;
+}
+#main .section>.options_strategy .notes dd{
+    width: 200px;
+    padding-left: 6px;
+    border-left: 3px solid #ccc;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#main .sales .title,
+#main .section .title,
+#main .partner .title{
+    height: 35px;
+    border-bottom: 2px solid #dddddd;
+}
+#main .partner{
+    height: 167px;
+}
+#main .partner .who{
+    height: 79px;
+    padding:25px 36px;
+    background: url(../img/partner.png) 0 0 no-repeat;
+}

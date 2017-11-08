@@ -1,0 +1,68 @@
+/*设置通用样式*/
+body{
+    font:12px "微软雅黑",Arial,Helvetica,sans-serif;
+    color:#666;
+    margin:0;
+    padding:0;
+    background-color: #fff;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+input,button{
+    outline: none;
+    border: none;
+}
+em,i{font-style: normal; font-weight: 400;}
+
+body a{color:#333; text-decoration:none;}
+
+a:hover{color:#f60;}
+
+img{border: 0;  vertical-align:middle;}
+
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.w1200{width: 1200px;}
+.fl,.lt { float:left;}
+.fr,.rt { float:right;}
+.tc{text-align: center;}
+.tr{text-align: right;}
+.pr{position: relative;}
+.pa{ position: absolute;}
+.p30{padding: 30px;}
+.p10{padding: 10px;}
+.pt5{padding-top: 5px;}
+.pt15{padding-top: 15px;}
+.pl10{padding-left: 10px;}
+.pr10{padding-right: 10px;}
+.mt10{margin-top: 10px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.bc{margin-right: auto;margin-left: auto;}
+.fn{font-weight: normal;}
+.f16{font-size: 16px}
+.f18{font-size: 18px}
+.f22{font-size: 22px}
+
+iframe{
+    width:1200px;
+}
+.fixed_nav{
+    background: #F5F5F5;
+    position:fixed;
+    z-index: 6;
+    top:0;
+    left:0;
+    right: 0;
+    width: 1000px;
+    height:60px;
+    transition: all 0.1s;
+    padding: 5px;
+    margin:0 auto;
+}

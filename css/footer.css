@@ -1,0 +1,138 @@
+#footer{
+    margin-top: 20px;
+    height: 350px;
+}
+#footer *{
+    box-sizing: content-box;
+}
+#footer .promise{
+    padding: 0 70px;
+    height: 68px;
+    background: #dd3377;
+    margin: 0;
+}
+#footer .promise li{
+    box-sizing: content-box;
+    float: left;
+    width: 231px;
+    height: 44px;
+    padding: 12px 20px 12px 45px;
+    border-right: 1px solid #e25a91;
+    color: #fff;
+}
+#footer .promise li [class^="bg_logo"]{
+    width: 35px;
+    height: 38px;
+    background: url(../img/promise_logo.png) no-repeat;
+    margin-right: 13px;
+}
+#footer .promise li .bg_logo2{
+    background-position: -35px 0;
+}
+#footer .promise li .bg_logo3{
+    background-position: -70px 0;
+}
+#footer .promise li .bg_logo4{
+    background-position: -105px 0;
+}
+#footer .promise li:last-child{
+    border-right: none;
+}
+#footer .promise li .promise_title{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+#footer .promise li .promise_info{
+    font-size: 11px;
+}
+#footer .about{
+    height: 232px;
+    padding: 17px 0 0 79px;
+    background: #2f3f4f;
+}
+#footer .about li{
+    width: 137px;
+    height: 195px;
+    padding-left: 19px;
+    float:left;
+    border-right: 1px dotted #000;
+    color: #fff;
+    cursor: auto;
+}
+#footer .about li a{
+    color: #fff;
+    cursor: pointer;
+}
+
+#footer .about li a:hover{
+    color: #e38;
+    text-decoration: underline;
+}
+#footer .about li dt{
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+#footer .about li dd,
+#footer .about li span{
+    margin-bottom: 8px;
+}
+#footer .about li span{
+    display: block;
+}
+#footer .about li .tel{
+    font-size: 19px;
+    color: #ed3377;
+}
+#footer .about li .check_tel{
+    margin-top: 25px;
+}
+#footer .about li:last-child :nth-child(5),
+#footer .about li:last-child :last-child{
+    font-size: 14px;
+}
+#footer .about .code{
+    width: 271px;
+    color: #fff;
+    padding: 0 0 0 19px;
+}
+#footer .about .code .code_title{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+#footer .about .code input{
+    width: 175px;
+    height: 28px;
+    padding-left: 15px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+#footer .about .code button{
+    width: 50px;
+    height: 30px;
+    background: #ee3388;
+    color: #fff;
+    position: relative;
+    left: -3px;
+    top: 1px;
+}
+#footer .about .code .two_code{
+    width: 280px;
+    height: 88px;
+    margin: 15px 0;
+}
+#footer .about .code .two_code img{
+    vertical-align: middle;
+}
+#footer .about .code span{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin-left: 5px;
+    color: #ccccc4;
+}
+#footer .legal{
+    padding: 10px 0;
+    color: #666;
+    text-align: center;
+}
